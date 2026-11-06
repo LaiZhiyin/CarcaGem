@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+dist-server
+
+# Local files
+*.local
+.env.local
+
+# Private configuration and runtime data
+.env
+.env.*
+!.env.example
+google*.html
+*.pem
+*.key
+*.p12
+*.pfx
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Draft and backup directories
+cc_draft
+cc_tiles_v1
+*_backup
+*_old
+
+# Development and test files
+tile_*_editor.html
+test-results.html
+
+# Claude Code specific
+.claude/
+memory/
+
+# Generated metadata and local user data
+*.tsbuildinfo
+.Rhistory
+data/
+.env.production
+
+# Historical exports and design intermediates
+*.tar.gz
+design-previews/
+public/tiles/_backup_original/
+
+# Local implementation ledgers
+.superpowers/

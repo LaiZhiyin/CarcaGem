@@ -1,0 +1,52 @@
+{
+  "name": "carcagem",
+  "private": true,
+  "version": "1.0.4",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "version:update": "node scripts/update-version.js",
+    "version:bump": "node scripts/auto-version.js",
+    "build": "npm run version:update && tsc -b && vite build && npm run build:server",
+    "build:server": "tsc src/server.ts src/engine/ai.node-worker.ts src/analytics/report.worker.ts --outDir dist-server --module ESNext --target ES2023 --moduleResolution node --esModuleInterop --skipLibCheck --allowSyntheticDefaultImports",
+    "lint": "eslint .",
+    "test": "vitest run test_*.ts",
+    "preview": "vite preview",
+    "server": "npm run build:server && ANALYTICS_DATA_PATH=${ANALYTICS_DATA_PATH:-./data} node --watch dist-server/server.js",
+    "start": "NODE_ENV=production node dist-server/server.js",
+    "check:assets": "node scripts/check-assets.mjs",
+    "release": "npm run version:bump && npm run build"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "socket.io": "^4.8.3",
+    "socket.io-client": "^4.8.3",
+    "three": "^0.186.1",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.12.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "jsdom": "^27.0.1",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^8.0.0",
+    "vitest": "^3.2.4"
+  }
+}

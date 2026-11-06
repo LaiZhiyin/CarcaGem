@@ -1,0 +1,3888 @@
+{
+  "budget": {
+    "hard": 1200,
+    "normal": 220
+  },
+  "rows": [
+    {
+      "seed": 1,
+      "seat": 0,
+      "scores": [
+        134,
+        112
+      ],
+      "margin": 22,
+      "decisions": [
+        {
+          "difficulty": "hard",
+          "ms": 1200.102958,
+          "samples": 122,
+          "evaluated": 12
+        },
+        {
+          "difficulty": "normal",
+          "ms": 4.916666999999961,
+          "samples": 0,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.99525,
+          "samples": 89,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 25.781375000000025,
+          "samples": 0,
+          "evaluated": 61
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2755000000002,
+          "samples": 55,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 10.706458000000111,
+          "samples": 0,
+          "evaluated": 19
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5640419999995,
+          "samples": 41,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 28.522750000000087,
+          "samples": 0,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8485410000003,
+          "samples": 34,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "normal",
+          "ms": 36.01475000000028,
+          "samples": 0,
+          "evaluated": 51
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.182334,
+          "samples": 20,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "normal",
+          "ms": 47.665374999999585,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6303750000006,
+          "samples": 19,
+          "evaluated": 103
+        },
+        {
+          "difficulty": "normal",
+          "ms": 49.44695800000045,
+          "samples": 0,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "normal",
+          "ms": 45.164458000001105,
+          "samples": 0,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.895042,
+          "samples": 14,
+          "evaluated": 43
+        },
+        {
+          "difficulty": "normal",
+          "ms": 98.3746659999997,
+          "samples": 0,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9582090000004,
+          "samples": 10,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "normal",
+          "ms": 137.7314580000002,
+          "samples": 0,
+          "evaluated": 114
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4470839999994,
+          "samples": 9,
+          "evaluated": 68
+        },
+        {
+          "difficulty": "normal",
+          "ms": 92.50849999999991,
+          "samples": 0,
+          "evaluated": 80
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4634580000002,
+          "samples": 12,
+          "evaluated": 78
+        },
+        {
+          "difficulty": "normal",
+          "ms": 113.02920799999993,
+          "samples": 0,
+          "evaluated": 94
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8036659999998,
+          "samples": 9,
+          "evaluated": 61
+        },
+        {
+          "difficulty": "normal",
+          "ms": 179.62537499999962,
+          "samples": 0,
+          "evaluated": 174
+        },
+        {
+          "difficulty": "normal",
+          "ms": 66.83533399999942,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7883749999983,
+          "samples": 9,
+          "evaluated": 79
+        },
+        {
+          "difficulty": "normal",
+          "ms": 93.81995900000038,
+          "samples": 0,
+          "evaluated": 143
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0469589999993,
+          "samples": 9,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "normal",
+          "ms": 111.04408300000068,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4368749999994,
+          "samples": 6,
+          "evaluated": 115
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.8301250000004,
+          "samples": 0,
+          "evaluated": 123
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7277089999989,
+          "samples": 6,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "normal",
+          "ms": 138.2354579999992,
+          "samples": 0,
+          "evaluated": 86
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6626250000008,
+          "samples": 6,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "normal",
+          "ms": 174.24854100000084,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.3337920000013,
+          "samples": 4,
+          "evaluated": 96
+        },
+        {
+          "difficulty": "normal",
+          "ms": 166.10525000000052,
+          "samples": 0,
+          "evaluated": 97
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2619589999995,
+          "samples": 3,
+          "evaluated": 166
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2875840000015,
+          "samples": 4,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "normal",
+          "ms": 207.8949160000011,
+          "samples": 0,
+          "evaluated": 114
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9126250000008,
+          "samples": 3,
+          "evaluated": 122
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.33495799999946,
+          "samples": 0,
+          "evaluated": 78
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.7031669999997,
+          "samples": 2,
+          "evaluated": 155
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.2388749999991,
+          "samples": 0,
+          "evaluated": 134
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2158750000017,
+          "samples": 2,
+          "evaluated": 274
+        },
+        {
+          "difficulty": "normal",
+          "ms": 206.02512500000012,
+          "samples": 0,
+          "evaluated": 114
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.5507080000025,
+          "samples": 3,
+          "evaluated": 142
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.58979199999885,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2912499999984,
+          "samples": 4,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "normal",
+          "ms": 212.02241700000013,
+          "samples": 0,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.7592500000028,
+          "samples": 4,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.8872080000001,
+          "samples": 0,
+          "evaluated": 123
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.4833329999965,
+          "samples": 3,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.19670800000313,
+          "samples": 0,
+          "evaluated": 127
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.6992919999975,
+          "samples": 3,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "normal",
+          "ms": 219.58829200000037,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1206250000032,
+          "samples": 3,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "normal",
+          "ms": 215.0430419999975,
+          "samples": 0,
+          "evaluated": 126
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.693542000001,
+          "samples": 3,
+          "evaluated": 120
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.03737499999988,
+          "samples": 0,
+          "evaluated": 119
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.978750000002,
+          "samples": 4,
+          "evaluated": 141
+        },
+        {
+          "difficulty": "normal",
+          "ms": 172.80320800000482,
+          "samples": 0,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.0065830000021,
+          "samples": 2,
+          "evaluated": 171
+        },
+        {
+          "difficulty": "normal",
+          "ms": 141.84866599999805,
+          "samples": 0,
+          "evaluated": 79
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.4253339999996,
+          "samples": 2,
+          "evaluated": 183
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.30295800000022,
+          "samples": 0,
+          "evaluated": 125
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.005707999997,
+          "samples": 3,
+          "evaluated": 56
+        },
+        {
+          "difficulty": "normal",
+          "ms": 222.23991699999897,
+          "samples": 0,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.4530840000007,
+          "samples": 4,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "normal",
+          "ms": 78.658666000003,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.7551250000033,
+          "samples": 6,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "normal",
+          "ms": 72.0654579999973,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.9695829999982,
+          "samples": 5,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 71.52924999999959,
+          "samples": 0,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.7590419999979,
+          "samples": 3,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 63.52212500000314,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.5266249999986,
+          "samples": 10,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 107.17483399999765,
+          "samples": 0,
+          "evaluated": 37
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "seat": 1,
+      "scores": [
+        94,
+        101
+      ],
+      "margin": 7,
+      "decisions": [
+        {
+          "difficulty": "normal",
+          "ms": 0.7919999999940046,
+          "samples": 0,
+          "evaluated": 12
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.715333,
+          "samples": 124,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "normal",
+          "ms": 11.563333999998576,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.75,
+          "samples": 59,
+          "evaluated": 61
+        },
+        {
+          "difficulty": "normal",
+          "ms": 15.395833000002312,
+          "samples": 0,
+          "evaluated": 26
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9920829999974,
+          "samples": 51,
+          "evaluated": 16
+        },
+        {
+          "difficulty": "normal",
+          "ms": 15.520457999999053,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1221250000017,
+          "samples": 42,
+          "evaluated": 41
+        },
+        {
+          "difficulty": "normal",
+          "ms": 74.1440419999999,
+          "samples": 0,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0274579999968,
+          "samples": 30,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "normal",
+          "ms": 63.41420800000196,
+          "samples": 0,
+          "evaluated": 56
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7146670000002,
+          "samples": 21,
+          "evaluated": 45
+        },
+        {
+          "difficulty": "normal",
+          "ms": 162.0569170000017,
+          "samples": 0,
+          "evaluated": 110
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3851250000007,
+          "samples": 18,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "normal",
+          "ms": 128.03266599999915,
+          "samples": 0,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.989916999999,
+          "samples": 17,
+          "evaluated": 74
+        },
+        {
+          "difficulty": "normal",
+          "ms": 186.71191700000054,
+          "samples": 0,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3660000000018,
+          "samples": 11,
+          "evaluated": 137
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2050000000017,
+          "samples": 12,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "normal",
+          "ms": 68.57949999999983,
+          "samples": 0,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2590420000051,
+          "samples": 8,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 111.6811250000028,
+          "samples": 0,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1647920000105,
+          "samples": 8,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "normal",
+          "ms": 55.48954199999571,
+          "samples": 0,
+          "evaluated": 45
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0930419999931,
+          "samples": 7,
+          "evaluated": 203
+        },
+        {
+          "difficulty": "normal",
+          "ms": 91.19683300000906,
+          "samples": 0,
+          "evaluated": 75
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3949589999975,
+          "samples": 10,
+          "evaluated": 57
+        },
+        {
+          "difficulty": "normal",
+          "ms": 112.22466700000223,
+          "samples": 0,
+          "evaluated": 96
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0018750000017,
+          "samples": 10,
+          "evaluated": 79
+        },
+        {
+          "difficulty": "normal",
+          "ms": 96.50991599999543,
+          "samples": 0,
+          "evaluated": 74
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7821669999976,
+          "samples": 6,
+          "evaluated": 101
+        },
+        {
+          "difficulty": "normal",
+          "ms": 141.03024999999616,
+          "samples": 0,
+          "evaluated": 119
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0927500000107,
+          "samples": 7,
+          "evaluated": 102
+        },
+        {
+          "difficulty": "normal",
+          "ms": 106.49408299999777,
+          "samples": 0,
+          "evaluated": 110
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.517875000005,
+          "samples": 8,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "normal",
+          "ms": 74.00366699999722,
+          "samples": 0,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4135410000017,
+          "samples": 7,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "normal",
+          "ms": 52.08933299999626,
+          "samples": 0,
+          "evaluated": 52
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1340840000048,
+          "samples": 5,
+          "evaluated": 178
+        },
+        {
+          "difficulty": "normal",
+          "ms": 154.0898329999909,
+          "samples": 0,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5164170000062,
+          "samples": 5,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "normal",
+          "ms": 126.22191700000258,
+          "samples": 0,
+          "evaluated": 118
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2495409999974,
+          "samples": 6,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "normal",
+          "ms": 155.29533300000185,
+          "samples": 0,
+          "evaluated": 131
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4918340000004,
+          "samples": 5,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.4880839999969,
+          "samples": 0,
+          "evaluated": 178
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5362500000047,
+          "samples": 5,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.41266700001142,
+          "samples": 0,
+          "evaluated": 145
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.936333000005,
+          "samples": 5,
+          "evaluated": 159
+        },
+        {
+          "difficulty": "normal",
+          "ms": 147.6318750000064,
+          "samples": 0,
+          "evaluated": 97
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8750830000063,
+          "samples": 6,
+          "evaluated": 101
+        },
+        {
+          "difficulty": "normal",
+          "ms": 207.01720800000476,
+          "samples": 0,
+          "evaluated": 147
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.148708000008,
+          "samples": 8,
+          "evaluated": 152
+        },
+        {
+          "difficulty": "normal",
+          "ms": 81.72258300000976,
+          "samples": 0,
+          "evaluated": 72
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.200125000003,
+          "samples": 6,
+          "evaluated": 174
+        },
+        {
+          "difficulty": "normal",
+          "ms": 77.76516700000502,
+          "samples": 0,
+          "evaluated": 78
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5009999999893,
+          "samples": 5,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "normal",
+          "ms": 73.66429099999368,
+          "samples": 0,
+          "evaluated": 75
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0332499999931,
+          "samples": 6,
+          "evaluated": 163
+        },
+        {
+          "difficulty": "normal",
+          "ms": 105.24899999999616,
+          "samples": 0,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1757079999952,
+          "samples": 5,
+          "evaluated": 242
+        },
+        {
+          "difficulty": "normal",
+          "ms": 170.52187500000582,
+          "samples": 0,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0233749999898,
+          "samples": 6,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "normal",
+          "ms": 174.98462499999732,
+          "samples": 0,
+          "evaluated": 181
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.166207999995,
+          "samples": 6,
+          "evaluated": 53
+        },
+        {
+          "difficulty": "normal",
+          "ms": 160.58470900000248,
+          "samples": 0,
+          "evaluated": 164
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0715420000051,
+          "samples": 4,
+          "evaluated": 128
+        },
+        {
+          "difficulty": "normal",
+          "ms": 22.244542000000365,
+          "samples": 0,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5996669999877,
+          "samples": 2,
+          "evaluated": 380
+        },
+        {
+          "difficulty": "normal",
+          "ms": 121.54429200000595,
+          "samples": 0,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9534589999967,
+          "samples": 7,
+          "evaluated": 26
+        },
+        {
+          "difficulty": "normal",
+          "ms": 159.2130829999951,
+          "samples": 0,
+          "evaluated": 149
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8094169999968,
+          "samples": 13,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "normal",
+          "ms": 18.188624999995227,
+          "samples": 0,
+          "evaluated": 16
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3089579999942,
+          "samples": 10,
+          "evaluated": 29
+        },
+        {
+          "difficulty": "normal",
+          "ms": 35.3580409999995,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.575874999995,
+          "samples": 9,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 43.30074999999488,
+          "samples": 0,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "hard",
+          "ms": 519.5583749999932,
+          "samples": 144,
+          "evaluated": 37
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "seat": 0,
+      "scores": [
+        112,
+        102
+      ],
+      "margin": 10,
+      "decisions": [
+        {
+          "difficulty": "hard",
+          "ms": 1200.084416999991,
+          "samples": 136,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "normal",
+          "ms": 5.673250000007101,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.492333999995,
+          "samples": 105,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "normal",
+          "ms": 12.41799999999057,
+          "samples": 0,
+          "evaluated": 45
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9637079999957,
+          "samples": 71,
+          "evaluated": 46
+        },
+        {
+          "difficulty": "normal",
+          "ms": 10.805917000005138,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7104580000014,
+          "samples": 46,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 24.66079200000968,
+          "samples": 0,
+          "evaluated": 39
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2284589999908,
+          "samples": 36,
+          "evaluated": 53
+        },
+        {
+          "difficulty": "normal",
+          "ms": 24.624333999992814,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.240374999994,
+          "samples": 24,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 60.95287500000268,
+          "samples": 0,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.963499999998,
+          "samples": 20,
+          "evaluated": 66
+        },
+        {
+          "difficulty": "normal",
+          "ms": 48.111250000001746,
+          "samples": 0,
+          "evaluated": 52
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3034999999945,
+          "samples": 22,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "normal",
+          "ms": 71.99237500000163,
+          "samples": 0,
+          "evaluated": 63
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2021669999958,
+          "samples": 19,
+          "evaluated": 81
+        },
+        {
+          "difficulty": "normal",
+          "ms": 143.88066699999035,
+          "samples": 0,
+          "evaluated": 99
+        },
+        {
+          "difficulty": "normal",
+          "ms": 101.8564170000027,
+          "samples": 0,
+          "evaluated": 72
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.931166999988,
+          "samples": 15,
+          "evaluated": 67
+        },
+        {
+          "difficulty": "normal",
+          "ms": 79.63350000001083,
+          "samples": 0,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1797499999957,
+          "samples": 15,
+          "evaluated": 62
+        },
+        {
+          "difficulty": "normal",
+          "ms": 130.68654199999582,
+          "samples": 0,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9277500000026,
+          "samples": 13,
+          "evaluated": 69
+        },
+        {
+          "difficulty": "normal",
+          "ms": 164.64729200000875,
+          "samples": 0,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9076249999925,
+          "samples": 10,
+          "evaluated": 93
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7289170000004,
+          "samples": 13,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "normal",
+          "ms": 102.16412499999569,
+          "samples": 0,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.536208999998,
+          "samples": 9,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "normal",
+          "ms": 54.46024999998917,
+          "samples": 0,
+          "evaluated": 62
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4275840000046,
+          "samples": 17,
+          "evaluated": 77
+        },
+        {
+          "difficulty": "normal",
+          "ms": 19.851125000001048,
+          "samples": 0,
+          "evaluated": 19
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7106670000067,
+          "samples": 16,
+          "evaluated": 79
+        },
+        {
+          "difficulty": "normal",
+          "ms": 28.098999999987427,
+          "samples": 0,
+          "evaluated": 28
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.859792000003,
+          "samples": 12,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "normal",
+          "ms": 101.90945799999463,
+          "samples": 0,
+          "evaluated": 96
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4427499999874,
+          "samples": 14,
+          "evaluated": 126
+        },
+        {
+          "difficulty": "normal",
+          "ms": 21.51395800001046,
+          "samples": 0,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.952707999997,
+          "samples": 6,
+          "evaluated": 99
+        },
+        {
+          "difficulty": "normal",
+          "ms": 22.752874999991036,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2591250000114,
+          "samples": 7,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "normal",
+          "ms": 36.874500000005355,
+          "samples": 0,
+          "evaluated": 29
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8544159999874,
+          "samples": 6,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 62.47370800000499,
+          "samples": 0,
+          "evaluated": 61
+        },
+        {
+          "difficulty": "normal",
+          "ms": 147.18108300000313,
+          "samples": 0,
+          "evaluated": 159
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5027909999772,
+          "samples": 4,
+          "evaluated": 90
+        },
+        {
+          "difficulty": "normal",
+          "ms": 179.2714580000029,
+          "samples": 0,
+          "evaluated": 161
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.8273329999938,
+          "samples": 7,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "normal",
+          "ms": 78.31012499998906,
+          "samples": 0,
+          "evaluated": 94
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.77904199998,
+          "samples": 7,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "normal",
+          "ms": 8.731541000015568,
+          "samples": 0,
+          "evaluated": 10
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5244999999995,
+          "samples": 9,
+          "evaluated": 70
+        },
+        {
+          "difficulty": "normal",
+          "ms": 12.955916999984765,
+          "samples": 0,
+          "evaluated": 15
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.262041000009,
+          "samples": 10,
+          "evaluated": 117
+        },
+        {
+          "difficulty": "normal",
+          "ms": 28.038999999989755,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2358339999919,
+          "samples": 10,
+          "evaluated": 59
+        },
+        {
+          "difficulty": "normal",
+          "ms": 30.120957999984967,
+          "samples": 0,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1802920000046,
+          "samples": 11,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 28.842499999998836,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.08262500001,
+          "samples": 8,
+          "evaluated": 109
+        },
+        {
+          "difficulty": "normal",
+          "ms": 32.58958299999358,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.897666999983,
+          "samples": 7,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 34.171875,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0533749999886,
+          "samples": 8,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 31.82429200000479,
+          "samples": 0,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5234579999815,
+          "samples": 5,
+          "evaluated": 94
+        },
+        {
+          "difficulty": "normal",
+          "ms": 51.427166999987094,
+          "samples": 0,
+          "evaluated": 56
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7291250000126,
+          "samples": 9,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "normal",
+          "ms": 30.657333000010112,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.245958000014,
+          "samples": 7,
+          "evaluated": 163
+        },
+        {
+          "difficulty": "normal",
+          "ms": 40.59387500002049,
+          "samples": 0,
+          "evaluated": 43
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7185839999875,
+          "samples": 7,
+          "evaluated": 86
+        },
+        {
+          "difficulty": "normal",
+          "ms": 32.735416000010446,
+          "samples": 0,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.045083999983,
+          "samples": 11,
+          "evaluated": 201
+        },
+        {
+          "difficulty": "normal",
+          "ms": 32.97475000002305,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1205.7225420000032,
+          "samples": 7,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "normal",
+          "ms": 37.08233299999847,
+          "samples": 0,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.4220000000205,
+          "samples": 8,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "normal",
+          "ms": 112.85308300002362,
+          "samples": 0,
+          "evaluated": 39
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "seat": 1,
+      "scores": [
+        90,
+        81
+      ],
+      "margin": -9,
+      "decisions": [
+        {
+          "difficulty": "normal",
+          "ms": 2.418374999979278,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.453542000003,
+          "samples": 120,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "normal",
+          "ms": 5.475458000000799,
+          "samples": 0,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.5159580000036,
+          "samples": 82,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "normal",
+          "ms": 11.579333000001498,
+          "samples": 0,
+          "evaluated": 46
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.4988750000193,
+          "samples": 48,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 20.420917000010377,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3242909999972,
+          "samples": 32,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "normal",
+          "ms": 35.72941699999501,
+          "samples": 0,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.8185419999936,
+          "samples": 29,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "normal",
+          "ms": 29.718917000020156,
+          "samples": 0,
+          "evaluated": 50
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.890625,
+          "samples": 21,
+          "evaluated": 70
+        },
+        {
+          "difficulty": "normal",
+          "ms": 62.74924999999348,
+          "samples": 0,
+          "evaluated": 80
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.759040999983,
+          "samples": 18,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "normal",
+          "ms": 33.038375000003725,
+          "samples": 0,
+          "evaluated": 66
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7099589999998,
+          "samples": 19,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "normal",
+          "ms": 54.984375,
+          "samples": 0,
+          "evaluated": 85
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0048330000136,
+          "samples": 18,
+          "evaluated": 103
+        },
+        {
+          "difficulty": "normal",
+          "ms": 209.30283300002338,
+          "samples": 0,
+          "evaluated": 236
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.6909999999916,
+          "samples": 15,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "normal",
+          "ms": 19.410040999995545,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.8592920000083,
+          "samples": 15,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "normal",
+          "ms": 94.18920799999614,
+          "samples": 0,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.824791000021,
+          "samples": 13,
+          "evaluated": 53
+        },
+        {
+          "difficulty": "normal",
+          "ms": 67.47379200000432,
+          "samples": 0,
+          "evaluated": 68
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2391669999924,
+          "samples": 9,
+          "evaluated": 189
+        },
+        {
+          "difficulty": "normal",
+          "ms": 34.451290999975754,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.41395799999,
+          "samples": 10,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.6219159999746,
+          "samples": 0,
+          "evaluated": 185
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5558339999989,
+          "samples": 7,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "normal",
+          "ms": 46.71329099999275,
+          "samples": 0,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.396624999994,
+          "samples": 8,
+          "evaluated": 109
+        },
+        {
+          "difficulty": "normal",
+          "ms": 58.39520800000173,
+          "samples": 0,
+          "evaluated": 47
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.583290999988,
+          "samples": 8,
+          "evaluated": 31
+        },
+        {
+          "difficulty": "normal",
+          "ms": 118.26337500000955,
+          "samples": 0,
+          "evaluated": 85
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6514169999864,
+          "samples": 8,
+          "evaluated": 26
+        },
+        {
+          "difficulty": "normal",
+          "ms": 134.32566600001883,
+          "samples": 0,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9796659999993,
+          "samples": 10,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 112.75662500000908,
+          "samples": 0,
+          "evaluated": 73
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.450125000003,
+          "samples": 8,
+          "evaluated": 31
+        },
+        {
+          "difficulty": "normal",
+          "ms": 212.92700000002515,
+          "samples": 0,
+          "evaluated": 129
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6454999999842,
+          "samples": 6,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 81.75474999999278,
+          "samples": 0,
+          "evaluated": 52
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4538750000065,
+          "samples": 6,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "normal",
+          "ms": 198.56854200002272,
+          "samples": 0,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8919159999932,
+          "samples": 6,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "normal",
+          "ms": 205.63762500000303,
+          "samples": 0,
+          "evaluated": 161
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7909999999974,
+          "samples": 8,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "normal",
+          "ms": 94.41379100002814,
+          "samples": 0,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8780419999966,
+          "samples": 5,
+          "evaluated": 177
+        },
+        {
+          "difficulty": "normal",
+          "ms": 152.67929100000765,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.846583000006,
+          "samples": 7,
+          "evaluated": 143
+        },
+        {
+          "difficulty": "normal",
+          "ms": 96.66304099999252,
+          "samples": 0,
+          "evaluated": 73
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8873750000203,
+          "samples": 4,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.55483300000196,
+          "samples": 0,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.963958999986,
+          "samples": 4,
+          "evaluated": 29
+        },
+        {
+          "difficulty": "normal",
+          "ms": 187.20104099999298,
+          "samples": 0,
+          "evaluated": 137
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5841670000227,
+          "samples": 4,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "normal",
+          "ms": 185.51054200000362,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6138330000103,
+          "samples": 6,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.2886249999865,
+          "samples": 0,
+          "evaluated": 139
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.439624999999,
+          "samples": 6,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "normal",
+          "ms": 175.01237499999115,
+          "samples": 0,
+          "evaluated": 115
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8107920000039,
+          "samples": 4,
+          "evaluated": 47
+        },
+        {
+          "difficulty": "normal",
+          "ms": 192.0828750000219,
+          "samples": 0,
+          "evaluated": 107
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3248749999912,
+          "samples": 5,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.18962499999907,
+          "samples": 0,
+          "evaluated": 135
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.328749999986,
+          "samples": 4,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.13562499999534,
+          "samples": 0,
+          "evaluated": 149
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.3804579999996,
+          "samples": 6,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 176.37054200001876,
+          "samples": 0,
+          "evaluated": 135
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2467499999912,
+          "samples": 11,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "normal",
+          "ms": 41.62512500002049,
+          "samples": 0,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6165000000037,
+          "samples": 8,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "normal",
+          "ms": 53.595624999987194,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2757090000086,
+          "samples": 5,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "normal",
+          "ms": 65.88375000000815,
+          "samples": 0,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.4727500000154,
+          "samples": 9,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "normal",
+          "ms": 144.64320800002315,
+          "samples": 0,
+          "evaluated": 49
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "seat": 0,
+      "scores": [
+        107,
+        81
+      ],
+      "margin": 26,
+      "decisions": [
+        {
+          "difficulty": "hard",
+          "ms": 1200.5137500000128,
+          "samples": 130,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 8.360709000000497,
+          "samples": 0,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1109.4748339999933,
+          "samples": 96,
+          "evaluated": 4
+        },
+        {
+          "difficulty": "normal",
+          "ms": 8.87437500001397,
+          "samples": 0,
+          "evaluated": 31
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7022080000024,
+          "samples": 76,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "normal",
+          "ms": 7.9550839999865275,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9406659999804,
+          "samples": 50,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 20.619917000003625,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1162919999915,
+          "samples": 35,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 25.437916000024416,
+          "samples": 0,
+          "evaluated": 23
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4414999999863,
+          "samples": 28,
+          "evaluated": 58
+        },
+        {
+          "difficulty": "normal",
+          "ms": 25.665124999999534,
+          "samples": 0,
+          "evaluated": 28
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.864750000008,
+          "samples": 30,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "normal",
+          "ms": 48.53562499998952,
+          "samples": 0,
+          "evaluated": 53
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.8126250000205,
+          "samples": 24,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "normal",
+          "ms": 43.00295900000492,
+          "samples": 0,
+          "evaluated": 57
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2574160000077,
+          "samples": 19,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "normal",
+          "ms": 51.95254100000602,
+          "samples": 0,
+          "evaluated": 63
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.862334000005,
+          "samples": 16,
+          "evaluated": 66
+        },
+        {
+          "difficulty": "normal",
+          "ms": 40.02524999997695,
+          "samples": 0,
+          "evaluated": 56
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2843330000178,
+          "samples": 11,
+          "evaluated": 130
+        },
+        {
+          "difficulty": "normal",
+          "ms": 67.29408299998613,
+          "samples": 0,
+          "evaluated": 85
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.072833000013,
+          "samples": 11,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.41320899999118,
+          "samples": 0,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1625840000052,
+          "samples": 7,
+          "evaluated": 208
+        },
+        {
+          "difficulty": "normal",
+          "ms": 127.91629100000137,
+          "samples": 0,
+          "evaluated": 90
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3763340000005,
+          "samples": 8,
+          "evaluated": 98
+        },
+        {
+          "difficulty": "normal",
+          "ms": 91.50499999997555,
+          "samples": 0,
+          "evaluated": 68
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9335420000134,
+          "samples": 14,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "normal",
+          "ms": 45.287249999993946,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5694590000203,
+          "samples": 16,
+          "evaluated": 89
+        },
+        {
+          "difficulty": "normal",
+          "ms": 44.39891700001317,
+          "samples": 0,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6070420000178,
+          "samples": 14,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "normal",
+          "ms": 31.222249999991618,
+          "samples": 0,
+          "evaluated": 25
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.427915999986,
+          "samples": 13,
+          "evaluated": 141
+        },
+        {
+          "difficulty": "normal",
+          "ms": 18.88537499998347,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.471790999989,
+          "samples": 11,
+          "evaluated": 98
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.44650000002,
+          "samples": 15,
+          "evaluated": 95
+        },
+        {
+          "difficulty": "normal",
+          "ms": 20.343458999996074,
+          "samples": 0,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0126670000027,
+          "samples": 14,
+          "evaluated": 96
+        },
+        {
+          "difficulty": "normal",
+          "ms": 22.040084000007482,
+          "samples": 0,
+          "evaluated": 23
+        },
+        {
+          "difficulty": "normal",
+          "ms": 106.94316600001184,
+          "samples": 0,
+          "evaluated": 110
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7766249999986,
+          "samples": 13,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "normal",
+          "ms": 18.749374999984866,
+          "samples": 0,
+          "evaluated": 18
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9964169999876,
+          "samples": 5,
+          "evaluated": 138
+        },
+        {
+          "difficulty": "normal",
+          "ms": 127.27225000000908,
+          "samples": 0,
+          "evaluated": 109
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6403329999885,
+          "samples": 8,
+          "evaluated": 90
+        },
+        {
+          "difficulty": "normal",
+          "ms": 31.692417000012938,
+          "samples": 0,
+          "evaluated": 27
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7773750000051,
+          "samples": 9,
+          "evaluated": 119
+        },
+        {
+          "difficulty": "normal",
+          "ms": 29.025000000023283,
+          "samples": 0,
+          "evaluated": 26
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8263330000045,
+          "samples": 8,
+          "evaluated": 102
+        },
+        {
+          "difficulty": "normal",
+          "ms": 52.786625000007916,
+          "samples": 0,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.974749999994,
+          "samples": 7,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "normal",
+          "ms": 46.47604099998716,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.4474580000096,
+          "samples": 8,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "normal",
+          "ms": 44.56854199999361,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9098330000124,
+          "samples": 7,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "normal",
+          "ms": 44.25704100000439,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2924169999897,
+          "samples": 6,
+          "evaluated": 115
+        },
+        {
+          "difficulty": "normal",
+          "ms": 41.908792000001995,
+          "samples": 0,
+          "evaluated": 28
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7930000000051,
+          "samples": 5,
+          "evaluated": 107
+        },
+        {
+          "difficulty": "normal",
+          "ms": 48.47208399997908,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9126249999972,
+          "samples": 4,
+          "evaluated": 150
+        },
+        {
+          "difficulty": "normal",
+          "ms": 44.920874999981606,
+          "samples": 0,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.8807500000112,
+          "samples": 4,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "normal",
+          "ms": 54.40304200001992,
+          "samples": 0,
+          "evaluated": 29
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1209999999846,
+          "samples": 2,
+          "evaluated": 156
+        },
+        {
+          "difficulty": "normal",
+          "ms": 65.46016600000439,
+          "samples": 0,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.1210000000137,
+          "samples": 2,
+          "evaluated": 193
+        },
+        {
+          "difficulty": "normal",
+          "ms": 77.14620799999102,
+          "samples": 0,
+          "evaluated": 39
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.1108330000134,
+          "samples": 2,
+          "evaluated": 190
+        },
+        {
+          "difficulty": "normal",
+          "ms": 84.06520799998543,
+          "samples": 0,
+          "evaluated": 43
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.6396670000104,
+          "samples": 2,
+          "evaluated": 225
+        },
+        {
+          "difficulty": "normal",
+          "ms": 72.10470900000655,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.1356249999953,
+          "samples": 2,
+          "evaluated": 111
+        },
+        {
+          "difficulty": "normal",
+          "ms": 95.82733300002292,
+          "samples": 0,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.3245830000087,
+          "samples": 5,
+          "evaluated": 152
+        },
+        {
+          "difficulty": "normal",
+          "ms": 77.61933299998054,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 620.586707999988,
+          "samples": 144,
+          "evaluated": 43
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "seat": 1,
+      "scores": [
+        90,
+        92
+      ],
+      "margin": 2,
+      "decisions": [
+        {
+          "difficulty": "normal",
+          "ms": 4.434416999982204,
+          "samples": 0,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.3008339999942,
+          "samples": 100,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "normal",
+          "ms": 6.0899590000044554,
+          "samples": 0,
+          "evaluated": 12
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3308329999854,
+          "samples": 76,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.6904579999973,
+          "samples": 62,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "normal",
+          "ms": 11.61662499999511,
+          "samples": 0,
+          "evaluated": 52
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.4082920000073,
+          "samples": 51,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "normal",
+          "ms": 17.237166000006255,
+          "samples": 0,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.172957999981,
+          "samples": 35,
+          "evaluated": 39
+        },
+        {
+          "difficulty": "normal",
+          "ms": 47.67283299998962,
+          "samples": 0,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.5974170000118,
+          "samples": 26,
+          "evaluated": 70
+        },
+        {
+          "difficulty": "normal",
+          "ms": 13.311249999998836,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.6317500000296,
+          "samples": 30,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "normal",
+          "ms": 36.93837500002701,
+          "samples": 0,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0934580000467,
+          "samples": 21,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "normal",
+          "ms": 22.11241699999664,
+          "samples": 0,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2261660000077,
+          "samples": 20,
+          "evaluated": 65
+        },
+        {
+          "difficulty": "normal",
+          "ms": 88.94066700001713,
+          "samples": 0,
+          "evaluated": 84
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0535829999717,
+          "samples": 19,
+          "evaluated": 52
+        },
+        {
+          "difficulty": "normal",
+          "ms": 83.87541699997382,
+          "samples": 0,
+          "evaluated": 93
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1949580000364,
+          "samples": 16,
+          "evaluated": 94
+        },
+        {
+          "difficulty": "normal",
+          "ms": 43.41104199999245,
+          "samples": 0,
+          "evaluated": 48
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7902079999913,
+          "samples": 15,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.7901670000283,
+          "samples": 0,
+          "evaluated": 220
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.929792000039,
+          "samples": 7,
+          "evaluated": 276
+        },
+        {
+          "difficulty": "normal",
+          "ms": 50.34695799998008,
+          "samples": 0,
+          "evaluated": 62
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1007499999832,
+          "samples": 9,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "normal",
+          "ms": 42.945124999969266,
+          "samples": 0,
+          "evaluated": 49
+        },
+        {
+          "difficulty": "normal",
+          "ms": 94.03720799996518,
+          "samples": 0,
+          "evaluated": 101
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.025874999992,
+          "samples": 7,
+          "evaluated": 67
+        },
+        {
+          "difficulty": "normal",
+          "ms": 72.30233299999963,
+          "samples": 0,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2179160000524,
+          "samples": 7,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "normal",
+          "ms": 58.725750000041444,
+          "samples": 0,
+          "evaluated": 65
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0330419999664,
+          "samples": 5,
+          "evaluated": 125
+        },
+        {
+          "difficulty": "normal",
+          "ms": 78.75666700000875,
+          "samples": 0,
+          "evaluated": 94
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0422499999986,
+          "samples": 6,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "normal",
+          "ms": 76.2550409999676,
+          "samples": 0,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6558330000262,
+          "samples": 6,
+          "evaluated": 127
+        },
+        {
+          "difficulty": "normal",
+          "ms": 109.87912500003586,
+          "samples": 0,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4876670000376,
+          "samples": 5,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "normal",
+          "ms": 57.895750000025146,
+          "samples": 0,
+          "evaluated": 56
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6483330000192,
+          "samples": 5,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "normal",
+          "ms": 174.1184169999906,
+          "samples": 0,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.940041999973,
+          "samples": 5,
+          "evaluated": 155
+        },
+        {
+          "difficulty": "normal",
+          "ms": 167.46070900000632,
+          "samples": 0,
+          "evaluated": 192
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2119999999995,
+          "samples": 5,
+          "evaluated": 172
+        },
+        {
+          "difficulty": "normal",
+          "ms": 88.13833299995167,
+          "samples": 0,
+          "evaluated": 91
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3842909999657,
+          "samples": 4,
+          "evaluated": 148
+        },
+        {
+          "difficulty": "normal",
+          "ms": 158.86966600001324,
+          "samples": 0,
+          "evaluated": 148
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2043750000303,
+          "samples": 4,
+          "evaluated": 163
+        },
+        {
+          "difficulty": "normal",
+          "ms": 120.64162499998929,
+          "samples": 0,
+          "evaluated": 113
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9691660000244,
+          "samples": 4,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "normal",
+          "ms": 141.5375420000055,
+          "samples": 0,
+          "evaluated": 156
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2108339999686,
+          "samples": 4,
+          "evaluated": 83
+        },
+        {
+          "difficulty": "normal",
+          "ms": 165.74808300001314,
+          "samples": 0,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4660830000066,
+          "samples": 4,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "normal",
+          "ms": 150.62045899999794,
+          "samples": 0,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.103375000006,
+          "samples": 4,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "normal",
+          "ms": 35.27587500005029,
+          "samples": 0,
+          "evaluated": 39
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5972499999916,
+          "samples": 4,
+          "evaluated": 133
+        },
+        {
+          "difficulty": "normal",
+          "ms": 158.24970900005428,
+          "samples": 0,
+          "evaluated": 158
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7397499999497,
+          "samples": 6,
+          "evaluated": 90
+        },
+        {
+          "difficulty": "normal",
+          "ms": 174.02900000003865,
+          "samples": 0,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1472080000094,
+          "samples": 5,
+          "evaluated": 22
+        },
+        {
+          "difficulty": "normal",
+          "ms": 142.0696670000325,
+          "samples": 0,
+          "evaluated": 130
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2157920000027,
+          "samples": 4,
+          "evaluated": 169
+        },
+        {
+          "difficulty": "normal",
+          "ms": 144.49387499998556,
+          "samples": 0,
+          "evaluated": 144
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.32058400003,
+          "samples": 4,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.38400000002002,
+          "samples": 0,
+          "evaluated": 199
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9011669999454,
+          "samples": 3,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "normal",
+          "ms": 190.85925000003772,
+          "samples": 0,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2722080000094,
+          "samples": 4,
+          "evaluated": 31
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.58633399999235,
+          "samples": 0,
+          "evaluated": 186
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0908329999656,
+          "samples": 5,
+          "evaluated": 41
+        },
+        {
+          "difficulty": "normal",
+          "ms": 89.4864580000285,
+          "samples": 0,
+          "evaluated": 87
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.9364580000401,
+          "samples": 2,
+          "evaluated": 46
+        },
+        {
+          "difficulty": "normal",
+          "ms": 162.60845899995184,
+          "samples": 0,
+          "evaluated": 148
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.838208000001,
+          "samples": 9,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "normal",
+          "ms": 135.78916700003901,
+          "samples": 0,
+          "evaluated": 46
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "seat": 0,
+      "scores": [
+        110,
+        88
+      ],
+      "margin": 22,
+      "decisions": [
+        {
+          "difficulty": "hard",
+          "ms": 1200.5108330000076,
+          "samples": 118,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "normal",
+          "ms": 29.431500000006054,
+          "samples": 0,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.6602089999942,
+          "samples": 73,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "normal",
+          "ms": 56.30066700000316,
+          "samples": 0,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7199169999803,
+          "samples": 63,
+          "evaluated": 18
+        },
+        {
+          "difficulty": "normal",
+          "ms": 147.85258299997076,
+          "samples": 0,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2959580000024,
+          "samples": 57,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "normal",
+          "ms": 19.006417000025976,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.423833000008,
+          "samples": 28,
+          "evaluated": 168
+        },
+        {
+          "difficulty": "normal",
+          "ms": 83.85620800004108,
+          "samples": 0,
+          "evaluated": 72
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3347910000011,
+          "samples": 21,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "normal",
+          "ms": 42.39462499995716,
+          "samples": 0,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5348329999833,
+          "samples": 24,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 30.771582999965176,
+          "samples": 0,
+          "evaluated": 34
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.375207999954,
+          "samples": 19,
+          "evaluated": 51
+        },
+        {
+          "difficulty": "normal",
+          "ms": 85.94537500001024,
+          "samples": 0,
+          "evaluated": 60
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1520419999724,
+          "samples": 17,
+          "evaluated": 43
+        },
+        {
+          "difficulty": "normal",
+          "ms": 125.3085419999552,
+          "samples": 0,
+          "evaluated": 68
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.236333000008,
+          "samples": 10,
+          "evaluated": 73
+        },
+        {
+          "difficulty": "normal",
+          "ms": 147.9690830000327,
+          "samples": 0,
+          "evaluated": 66
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6586670000106,
+          "samples": 9,
+          "evaluated": 102
+        },
+        {
+          "difficulty": "normal",
+          "ms": 206.88758400001097,
+          "samples": 0,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6804169999668,
+          "samples": 7,
+          "evaluated": 114
+        },
+        {
+          "difficulty": "normal",
+          "ms": 211.57695900002727,
+          "samples": 0,
+          "evaluated": 110
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2879589999793,
+          "samples": 7,
+          "evaluated": 55
+        },
+        {
+          "difficulty": "normal",
+          "ms": 161.5269580000313,
+          "samples": 0,
+          "evaluated": 116
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.5452909999876,
+          "samples": 4,
+          "evaluated": 206
+        },
+        {
+          "difficulty": "normal",
+          "ms": 222.05670899996767,
+          "samples": 0,
+          "evaluated": 120
+        },
+        {
+          "difficulty": "normal",
+          "ms": 195.91495800000848,
+          "samples": 0,
+          "evaluated": 122
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0100000000093,
+          "samples": 5,
+          "evaluated": 47
+        },
+        {
+          "difficulty": "normal",
+          "ms": 182.9452080000192,
+          "samples": 0,
+          "evaluated": 109
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.9839999999967,
+          "samples": 4,
+          "evaluated": 188
+        },
+        {
+          "difficulty": "normal",
+          "ms": 99.42466700001387,
+          "samples": 0,
+          "evaluated": 59
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7411250000005,
+          "samples": 4,
+          "evaluated": 96
+        },
+        {
+          "difficulty": "normal",
+          "ms": 140.30058300000383,
+          "samples": 0,
+          "evaluated": 99
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0196670000441,
+          "samples": 6,
+          "evaluated": 4
+        },
+        {
+          "difficulty": "normal",
+          "ms": 184.8452919999836,
+          "samples": 0,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.4400000000023,
+          "samples": 4,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "normal",
+          "ms": 88.94304100004956,
+          "samples": 0,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.773125000007,
+          "samples": 4,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "normal",
+          "ms": 193.14662499999395,
+          "samples": 0,
+          "evaluated": 135
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8202909999527,
+          "samples": 4,
+          "evaluated": 117
+        },
+        {
+          "difficulty": "normal",
+          "ms": 133.53062500001397,
+          "samples": 0,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6814580000355,
+          "samples": 4,
+          "evaluated": 106
+        },
+        {
+          "difficulty": "normal",
+          "ms": 107.91916699998546,
+          "samples": 0,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7711249999702,
+          "samples": 4,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "normal",
+          "ms": 203.42149999999674,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8383330000215,
+          "samples": 3,
+          "evaluated": 109
+        },
+        {
+          "difficulty": "normal",
+          "ms": 169.67300000000978,
+          "samples": 0,
+          "evaluated": 104
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.7026250000345,
+          "samples": 3,
+          "evaluated": 152
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.9662079999689,
+          "samples": 0,
+          "evaluated": 119
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.7791669999715,
+          "samples": 2,
+          "evaluated": 256
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2052080000285,
+          "samples": 3,
+          "evaluated": 196
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.80029099999228,
+          "samples": 0,
+          "evaluated": 120
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.5425420000101,
+          "samples": 3,
+          "evaluated": 83
+        },
+        {
+          "difficulty": "normal",
+          "ms": 166.98012500000186,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9577500000014,
+          "samples": 3,
+          "evaluated": 120
+        },
+        {
+          "difficulty": "normal",
+          "ms": 221.50816700002179,
+          "samples": 0,
+          "evaluated": 139
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.1383329999517,
+          "samples": 3,
+          "evaluated": 101
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.79304100002628,
+          "samples": 0,
+          "evaluated": 126
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.268374999985,
+          "samples": 3,
+          "evaluated": 92
+        },
+        {
+          "difficulty": "normal",
+          "ms": 191.07975000003353,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.5799170000246,
+          "samples": 3,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.3627919999999,
+          "samples": 0,
+          "evaluated": 133
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.2589999999618,
+          "samples": 3,
+          "evaluated": 151
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.36637500004144,
+          "samples": 0,
+          "evaluated": 98
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0537919999915,
+          "samples": 2,
+          "evaluated": 111
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.78962499997579,
+          "samples": 0,
+          "evaluated": 113
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.4531660000212,
+          "samples": 3,
+          "evaluated": 142
+        },
+        {
+          "difficulty": "normal",
+          "ms": 136.8296670000418,
+          "samples": 0,
+          "evaluated": 80
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0535419999505,
+          "samples": 5,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "normal",
+          "ms": 67.5317909999867,
+          "samples": 0,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.28704200004,
+          "samples": 6,
+          "evaluated": 42
+        },
+        {
+          "difficulty": "normal",
+          "ms": 88.26575000002049,
+          "samples": 0,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.732250000001,
+          "samples": 5,
+          "evaluated": 33
+        },
+        {
+          "difficulty": "normal",
+          "ms": 83.89737500000047,
+          "samples": 0,
+          "evaluated": 46
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1208.6064170000027,
+          "samples": 6,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 81.06812499999069,
+          "samples": 0,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "hard",
+          "ms": 863.2443750000093,
+          "samples": 144,
+          "evaluated": 46
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "seat": 1,
+      "scores": [
+        99,
+        103
+      ],
+      "margin": 4,
+      "decisions": [
+        {
+          "difficulty": "normal",
+          "ms": 2.0158340000198223,
+          "samples": 0,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.7389589999802,
+          "samples": 75,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "normal",
+          "ms": 16.913541999994777,
+          "samples": 0,
+          "evaluated": 24
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.0630830000155,
+          "samples": 57,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 13.459250000014435,
+          "samples": 0,
+          "evaluated": 18
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.157499999972,
+          "samples": 37,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "normal",
+          "ms": 13.27091699995799,
+          "samples": 0,
+          "evaluated": 20
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.853415999969,
+          "samples": 38,
+          "evaluated": 18
+        },
+        {
+          "difficulty": "normal",
+          "ms": 146.1504159999895,
+          "samples": 0,
+          "evaluated": 136
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.9580829999759,
+          "samples": 25,
+          "evaluated": 80
+        },
+        {
+          "difficulty": "normal",
+          "ms": 70.115334000031,
+          "samples": 0,
+          "evaluated": 54
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0585410000058,
+          "samples": 21,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 14.108124999969732,
+          "samples": 0,
+          "evaluated": 12
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.8755409999867,
+          "samples": 23,
+          "evaluated": 36
+        },
+        {
+          "difficulty": "normal",
+          "ms": 65.18787500000326,
+          "samples": 0,
+          "evaluated": 51
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8087499999674,
+          "samples": 18,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "normal",
+          "ms": 65.87008299998706,
+          "samples": 0,
+          "evaluated": 61
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.0205000000424,
+          "samples": 15,
+          "evaluated": 79
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.9235830000252,
+          "samples": 18,
+          "evaluated": 83
+        },
+        {
+          "difficulty": "normal",
+          "ms": 81.087583000015,
+          "samples": 0,
+          "evaluated": 76
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1835830000346,
+          "samples": 14,
+          "evaluated": 88
+        },
+        {
+          "difficulty": "normal",
+          "ms": 88.3467079999973,
+          "samples": 0,
+          "evaluated": 78
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.573458000028,
+          "samples": 8,
+          "evaluated": 86
+        },
+        {
+          "difficulty": "normal",
+          "ms": 106.76979200000642,
+          "samples": 0,
+          "evaluated": 86
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3142919999664,
+          "samples": 8,
+          "evaluated": 44
+        },
+        {
+          "difficulty": "normal",
+          "ms": 67.67337500001304,
+          "samples": 0,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3592920000083,
+          "samples": 8,
+          "evaluated": 143
+        },
+        {
+          "difficulty": "normal",
+          "ms": 89.98062500002561,
+          "samples": 0,
+          "evaluated": 85
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4605420000153,
+          "samples": 8,
+          "evaluated": 91
+        },
+        {
+          "difficulty": "normal",
+          "ms": 64.41837500000838,
+          "samples": 0,
+          "evaluated": 68
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1200.799624999985,
+          "samples": 6,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "normal",
+          "ms": 169.41204099997412,
+          "samples": 0,
+          "evaluated": 133
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.2705839999835,
+          "samples": 6,
+          "evaluated": 89
+        },
+        {
+          "difficulty": "normal",
+          "ms": 91.4537920000148,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1535419999855,
+          "samples": 6,
+          "evaluated": 64
+        },
+        {
+          "difficulty": "normal",
+          "ms": 27.962042000028305,
+          "samples": 0,
+          "evaluated": 32
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.1813749999856,
+          "samples": 5,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "normal",
+          "ms": 83.65358300000662,
+          "samples": 0,
+          "evaluated": 77
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6425410000375,
+          "samples": 5,
+          "evaluated": 103
+        },
+        {
+          "difficulty": "normal",
+          "ms": 137.31041599996388,
+          "samples": 0,
+          "evaluated": 111
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.102790999983,
+          "samples": 5,
+          "evaluated": 132
+        },
+        {
+          "difficulty": "normal",
+          "ms": 120.77495799999451,
+          "samples": 0,
+          "evaluated": 124
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.875457999995,
+          "samples": 4,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "normal",
+          "ms": 110.70045800000662,
+          "samples": 0,
+          "evaluated": 100
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.6058749999502,
+          "samples": 4,
+          "evaluated": 164
+        },
+        {
+          "difficulty": "normal",
+          "ms": 89.0321249999688,
+          "samples": 0,
+          "evaluated": 82
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.375,
+          "samples": 4,
+          "evaluated": 120
+        },
+        {
+          "difficulty": "normal",
+          "ms": 106.54937500000233,
+          "samples": 0,
+          "evaluated": 103
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.466417000047,
+          "samples": 4,
+          "evaluated": 119
+        },
+        {
+          "difficulty": "normal",
+          "ms": 148.05866699997569,
+          "samples": 0,
+          "evaluated": 139
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0897919999552,
+          "samples": 3,
+          "evaluated": 164
+        },
+        {
+          "difficulty": "normal",
+          "ms": 220.14729200000875,
+          "samples": 0,
+          "evaluated": 163
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.130999999994,
+          "samples": 3,
+          "evaluated": 180
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.3938339999877,
+          "samples": 3,
+          "evaluated": 138
+        },
+        {
+          "difficulty": "normal",
+          "ms": 148.37337500002468,
+          "samples": 0,
+          "evaluated": 108
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8977500000037,
+          "samples": 3,
+          "evaluated": 112
+        },
+        {
+          "difficulty": "normal",
+          "ms": 183.45220800000243,
+          "samples": 0,
+          "evaluated": 148
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.304167000053,
+          "samples": 3,
+          "evaluated": 140
+        },
+        {
+          "difficulty": "normal",
+          "ms": 137.9904169999645,
+          "samples": 0,
+          "evaluated": 107
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.7193750000442,
+          "samples": 3,
+          "evaluated": 181
+        },
+        {
+          "difficulty": "normal",
+          "ms": 171.97158399998443,
+          "samples": 0,
+          "evaluated": 131
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.4694160000072,
+          "samples": 3,
+          "evaluated": 156
+        },
+        {
+          "difficulty": "normal",
+          "ms": 172.55504200002179,
+          "samples": 0,
+          "evaluated": 128
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.022416999971,
+          "samples": 3,
+          "evaluated": 152
+        },
+        {
+          "difficulty": "normal",
+          "ms": 205.4751249999972,
+          "samples": 0,
+          "evaluated": 149
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.9887089999975,
+          "samples": 5,
+          "evaluated": 30
+        },
+        {
+          "difficulty": "normal",
+          "ms": 166.1839579999796,
+          "samples": 0,
+          "evaluated": 98
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.531624999945,
+          "samples": 7,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 64.03049999999348,
+          "samples": 0,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.100541999971,
+          "samples": 8,
+          "evaluated": 28
+        },
+        {
+          "difficulty": "normal",
+          "ms": 59.523207999998704,
+          "samples": 0,
+          "evaluated": 35
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1202.0859580000397,
+          "samples": 7,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 70.10787500004517,
+          "samples": 0,
+          "evaluated": 41
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1203.0692500000005,
+          "samples": 7,
+          "evaluated": 39
+        },
+        {
+          "difficulty": "normal",
+          "ms": 64.24920799996471,
+          "samples": 0,
+          "evaluated": 37
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1201.8188749999972,
+          "samples": 5,
+          "evaluated": 45
+        },
+        {
+          "difficulty": "normal",
+          "ms": 68.14658299996518,
+          "samples": 0,
+          "evaluated": 38
+        },
+        {
+          "difficulty": "hard",
+          "ms": 1204.364499999967,
+          "samples": 8,
+          "evaluated": 40
+        },
+        {
+          "difficulty": "normal",
+          "ms": 154.36116700002458,
+          "samples": 0,
+          "evaluated": 47
+        }
+      ]
+    }
+  ]
+}

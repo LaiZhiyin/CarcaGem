@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow"><meta name="format-detection" content="telephone=no,email=no">
+  <title>CarcaGem · Analytics</title>
+  <link rel="icon" href="/icons/carcagem_icon_256x256.png"><link rel="stylesheet" href="/admin/dashboard.css?v=1.0.4">
+  <script src="/admin/dashboard.js?v=1.0.4" defer></script>
+</head>
+<body>
+  <main id="auth-loading" class="login-shell"><div class="login-card"><p class="muted">Connecting to the analytics dashboard…</p></div></main>
+  <main id="login-panel" class="login-shell" hidden>
+    <form id="login-form" class="login-card">
+      <img src="/icons/carcagem_icon_256x256.png" alt="CarcaGem" width="76" height="76">
+      <p class="eyebrow">CARCAGEM · INSIGHTS</p><h1>Analytics Dashboard</h1><p class="muted">Understand where players come from, how they start, and why they return.</p>
+      <label for="password">Admin password</label><input id="password" type="password" autocomplete="current-password" maxlength="256" required>
+      <button type="submit" class="primary">Sign in <span aria-hidden="true">→</span></button><p id="login-error" role="alert" class="error"></p>
+      <a href="/">Back to CarcaGem</a>
+    </form>
+  </main>
+  <div id="dashboard" class="app-shell" hidden>
+    <aside class="sidebar">
+      <a class="brand" href="/"><img src="/icons/carcagem_icon_256x256.png" width="42" height="42" alt=""><span>CarcaGem<small>Analytics Dashboard</small></span></a>
+      <p class="nav-caption">Workspace</p>
+      <nav aria-label="Analytics navigation">
+        <button data-tab="overview" class="active" aria-current="page"><span>◈</span>Overview</button>
+        <button data-tab="channels"><span>↗</span>Channels & Campaigns</button>
+        <button data-tab="retention"><span>◎</span>Activation & Retention</button>
+        <button data-tab="games"><span>▧</span>Games & Online Play</button>
+        <button data-tab="experience"><span>⌁</span>Experience</button>
+        <button data-tab="health"><span>◇</span>Data Health</button>
+      </nav>
+      <button id="logout" class="text-button">Sign out</button><div class="sidebar-foot"><span class="status-dot"></span>First-party anonymous analytics<p>Timezone: Asia/Shanghai</p></div>
+    </aside>
+    <main class="workspace">
+      <header class="page-heading"><div><p class="eyebrow">CARCAGEM · INSIGHTS</p><h1 id="page-title">Overview</h1><p id="page-description" class="muted">From a visit to a game that truly begins.</p></div><button id="export" class="secondary">Export CSV</button></header>
+      <form id="filters" class="filter-bar">
+        <div class="presets" role="group" aria-label="Date range"><button type="button" data-days="1">Today</button><button type="button" data-days="yesterday">Yesterday</button><button type="button" data-days="7" class="selected">Last 7 days</button><button type="button" data-days="30">Last 30 days</button></div>
+        <label>From<input type="date" name="from" required></label><label>To<input type="date" name="to" required></label><button class="primary" type="submit">Update report</button>
+        <details><summary>More filters</summary><div class="advanced-filters">
+          <label>Environment<select name="env"><option value="production">Production</option><option value="development">Development</option><option value="internal">Internal test</option><option value="all">All environments</option></select></label>
+          <label>First device<select name="device"><option value="">All devices</option><option value="desktop">Desktop</option><option value="mobile">Mobile</option><option value="tablet">Tablet</option><option value="unknown">Unknown</option></select></label>
+          <label>First source<select name="source"><option value="">All sources</option></select></label><label>Campaign<select name="campaign"><option value="">All campaigns</option></select></label>
+          <label>First browser<select name="browser"><option value="">All browsers</option></select></label><label>Game version<select name="version"><option value="">All versions</option></select></label>
+        </div></details>
+      </form>
+      <div id="notice" class="notice" role="status">Loading analytics…</div>
+      <div id="report-error" class="error-banner" role="alert" hidden></div>
+      <div id="view-overview" class="view">
+        <div id="metrics" class="metrics"></div>
+        <div class="grid two"><section class="panel wide"><div class="panel-heading"><div><h2>Visits & Active Play</h2><p>Visitors are deduplicated by day; period totals are deduplicated again.</p></div><span class="badge">Daily trend</span></div><div id="trend"></div></section><section class="panel"><h2>Live activity</h2><p class="muted">Foreground activity over 90 seconds and server connections are measured separately.</p><div id="live-metrics"></div></section></div>
+        <div class="grid three"><section class="panel"><h2>Device mix</h2><p class="muted">Browser visitors to the site</p><div id="devices"></div></section><section class="panel"><h2>Game mix</h2><p class="muted">AI-only games are shown separately from human player growth</p><div id="modes"></div><p class="footnote">Grouped by environment and version; visitor source and device filters do not apply.</p></section><section class="panel"><h2>How to read these metrics</h2><p class="reading-note">An effective start requires at least one completed human turn. Deep play means three net human turns in the same game during this period, or a completed game with at least one human turn by the player.</p><p class="reading-note">Browser IDs cannot be merged across devices. Local games are reported by the client; online games are confirmed by the server.</p></section></div>
+        <section class="panel"><div class="panel-heading"><h2>Channel performance</h2><button type="button" data-go="channels" class="text-button">View channels & campaigns →</button></div><div id="top-channels"></div></section>
+      </div>
+      <div id="view-channels" class="view" hidden>
+        <section class="panel"><div class="panel-heading"><div><h2>Player quality by channel</h2><p>Each table uses a defined attribution model and denominator.</p></div><select id="attribution-model" aria-label="Attribution model"><option value="first">First-touch source</option><option value="session">Session source</option><option value="activation">Most recent non-direct touch in the 30 days before activation</option></select></div><div id="channel-table"></div></section>
+        <section class="panel"><h2>Landing pages</h2><div id="landing-table"></div></section><section class="panel"><div class="panel-heading"><div><h2>Campaign link builder</h2><p>Use consistent tags for posts, communities, and creative.</p></div><button id="new-campaign" type="button" class="primary">+ Create campaign link</button></div><div id="campaign-list"></div><p class="footnote">Copying a link does not mean it was shared. Impressions and ad spend require separate data; this dashboard does not estimate clicks, costs, or ROAS.</p></section>
+      </div>
+      <div id="view-retention" class="view" hidden>
+        <div id="journeys" class="grid three"></div><section class="panel"><h2>New visitor journey · 7-day mature cohort</h2><div id="new-journey"></div></section>
+        <section class="panel"><h2>New visitor activation</h2><p class="muted">Immediate activation uses the first session; 7-day activation uses a full 7×24-hour observation window.</p><div id="activation-metrics" class="inline-metrics"></div></section>
+        <section class="panel"><h2>Guide reading & later play</h2><p class="muted">Guide reading and later activation are associated within this period; this does not establish causation.</p><div id="guide-table"></div></section><section class="panel"><h2>Player retention cohort</h2><p class="muted">Grouped by Shanghai date of the first completed human turn. D1/D7 use calendar day 1/7; cohorts under 30 are marked as small samples.</p><div id="retention-table"></div></section>
+      </div>
+      <div id="view-games" class="view" hidden>
+        <div class="grid three" id="game-summary"></div>
+        <section class="panel"><div class="panel-heading"><div><h2>Recent games</h2><p>Up to 100 games; AI-only games are listed separately in the mix chart.</p></div><select id="game-mode" aria-label="Game mode details"><option value="">All human modes</option><option value="local_human">Local multiplayer</option><option value="local_ai">Local vs AI</option><option value="online_human">Online multiplayer</option><option value="online_ai">Online vs AI</option></select></div><div id="game-table"></div></section>
+        <div class="grid two"><section class="panel"><h2>Game status</h2><div id="game-states"></div></section><section class="panel"><h2>Player count</h2><div id="seat-composition"></div></section></div><section class="panel"><h2>Recent rooms</h2><p class="muted">Room UUIDs distinguish reused invite codes. A closed room is different from a completed game.</p><div id="room-table"></div></section>
+      </div>
+      <div id="view-experience" class="view" hidden>
+        <div id="experience-metrics" class="metrics"></div><div class="grid two"><section class="panel"><h2>Errors & connection issues</h2><div id="failure-table"></div></section><section class="panel"><h2>Browser mix</h2><div id="browsers"></div></section></div>
+        <section class="panel"><h2>Measurement limits</h2><p class="reading-note">Connection time is measured on the same device with a monotonic clock and includes connection setup and processing; it is not one-way network latency. “—” means there are no samples.</p><p class="reading-note">Web Vitals, time to an interactive board, and revision sync diagnostics are future experience metrics; this page does not substitute estimates for uncollected measurements.</p></section>
+      </div>
+      <div id="view-health" class="view" hidden>
+        <section class="panel"><h2>Collection & storage</h2><div id="health-table"></div></section>
+        <div class="grid two"><section class="panel"><h2>Internal test traffic</h2><p class="reading-note">Mark future visits from this browser as internal tests. Reopen the game after enabling this; production reports exclude these events by default.</p><div class="button-row"><button id="internal-on" type="button" class="secondary">Mark as internal test</button><button id="internal-off" type="button" class="secondary">Restore production visitor</button></div><p id="internal-result" role="status"></p></section><section class="panel"><h2>Legacy data</h2><p class="reading-note">Legacy databases are stored separately. Client “game start” logs do not prove a game occurred; historical records cannot provide completion rates or campaign attribution.</p><button id="legacy-load" type="button" class="secondary">Load legacy log summary</button><div id="legacy-result"></div></section></div>
+        <section class="panel"><h2>Daily history summary</h2><p class="reading-note">Daily totals are kept for up to 730 days; UV across days cannot be added to calculate period UV. Event details are kept for 90 days. Results are grouped by environment; source filters do not apply.</p><button id="history-load" type="button" class="secondary">Load daily history</button><div id="history-result"></div></section><section class="panel"><h2>Metric definitions & coverage</h2><p class="reading-note">The start of the current metric definition, latest accepted event, and data environment are shown separately. New visitors are identifiable browsers; clearing storage, private browsing, or switching devices can break continuity. Local games without an end signal remain “unconfirmed” and are not treated as deliberate exits.</p><p class="reading-note">Visits where analytics cannot run are outside measurement coverage. If a report fails, the last successful data remains visible with a delay notice; values are not replaced with zeros or default distributions.</p></section>
+      </div>
+      <footer class="workspace-footer"><span id="report-meta">Asia/Shanghai · First-touch attribution</span><a href="/">Open game ↗</a></footer>
+    </main>
+  </div>
+  <dialog id="campaign-dialog"><form id="campaign-form"><div class="panel-heading"><h2>Create campaign link</h2><button type="button" id="close-campaign" class="text-button" aria-label="Close">×</button></div><label>Campaign name<input name="name" maxlength="80" placeholder="November social launch" required></label><label>Source utm_source<input name="source" maxlength="80" pattern="[a-z0-9_.-]+" placeholder="xiaohongshu" required></label><label>Medium utm_medium<input name="medium" maxlength="80" pattern="[a-z0-9_.-]+" placeholder="organic_social" required></label><label>Campaign utm_campaign<input name="campaign" maxlength="80" pattern="[a-z0-9_.-]+" placeholder="launch_202611" required></label><label>Content utm_content<input name="content" maxlength="80" pattern="[a-z0-9_.-]*" placeholder="post_a"></label><p class="footnote">Use lowercase letters, numbers, underscores, periods, or hyphens for tags. Campaign IDs are generated automatically.</p><button type="submit" class="primary">Generate link & QR code</button><p id="campaign-error" role="alert" class="error"></p></form></dialog>
+  <dialog id="qr-dialog"><h2>Campaign QR code</h2><img id="qr-image" width="300" height="300" alt="Campaign link QR code"><a id="qr-download" download="carcagem-campaign.svg" class="primary">Download SVG</a><button id="qr-close" type="button" class="secondary">Close</button></dialog>
+</body>
+</html>

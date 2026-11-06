@@ -1,0 +1,199 @@
+.three-proof-page {
+  --proof-ink: #392c20;
+  --proof-muted: #85735e;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #d8c4a1;
+  color: var(--proof-ink);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.three-proof-canvas {
+  position: absolute;
+  inset: 0;
+  touch-action: none;
+}
+
+.three-proof-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.three-proof-canvas canvas:active { cursor: grabbing; }
+
+.three-proof-header {
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.three-proof-header > * { pointer-events: auto; }
+
+.three-proof-eyebrow {
+  color: #796242;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.three-proof-header h1 {
+  margin-top: 5px;
+  font-family: inherit;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 750;
+}
+
+.three-proof-exit {
+  color: var(--proof-ink);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(255, 249, 237, 0.8);
+  border: 1px solid rgba(81, 58, 31, 0.18);
+  border-radius: 999px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 12px rgba(60, 43, 22, 0.08);
+}
+
+.three-proof-panel {
+  position: absolute;
+  z-index: 2;
+  top: 104px;
+  right: 26px;
+  width: 276px;
+  padding: 19px;
+  border: 1px solid rgba(105, 78, 45, 0.15);
+  border-radius: 18px;
+  background: rgba(255, 250, 239, 0.91);
+  box-shadow: 0 14px 38px rgba(55, 39, 20, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.three-proof-badge {
+  display: inline-flex;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #e8dbc1;
+  color: #725937;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.three-proof-notice {
+  min-height: 38px;
+  margin: 13px 0 15px;
+  color: #675642;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.three-proof-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--proof-muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.three-proof-panel select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  color: var(--proof-ink);
+  background: #fffdf7;
+  border: 1px solid rgba(105, 78, 45, 0.2);
+  border-radius: 9px;
+  font: inherit;
+  font-size: 12px;
+}
+
+.three-proof-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.three-proof-actions button {
+  min-height: 36px;
+  padding: 6px 8px;
+  color: #fffaf0;
+  background: #5d8266;
+  border: 0;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.three-proof-actions button:first-child { background: #8b704b; }
+.three-proof-actions button.active { background: #386e9c; }
+.three-proof-actions button:disabled { cursor: default; opacity: 0.42; }
+.three-proof-actions button.quiet { color: #695a46; background: #eee5d3; }
+.three-proof-actions button span { opacity: 0.72; }
+
+.three-proof-scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(105, 78, 45, 0.12);
+  font-size: 10px;
+  color: #685843;
+}
+
+.three-proof-scores span { display: inline-flex; align-items: center; gap: 7px; }
+.three-proof-scores i { width: 10px; height: 10px; border-radius: 50%; }
+
+.three-proof-footnote {
+  margin-top: 12px;
+  color: #897960;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.three-proof-view-label {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 25px;
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: rgba(255, 249, 237, 0.78);
+  color: #725d42;
+  font-size: 10px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .three-proof-header { top: 15px; left: 15px; right: 15px; }
+  .three-proof-header h1 { font-size: 19px; }
+  .three-proof-eyebrow { font-size: 8px; letter-spacing: 1.4px; }
+  .three-proof-exit { padding: 8px 11px; font-size: 10px; }
+  .three-proof-panel {
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    padding: 13px;
+  }
+  .three-proof-notice { min-height: 0; margin: 8px 0; }
+  .three-proof-scores { margin-top: 9px; padding-top: 8px; }
+  .three-proof-footnote { margin-top: 7px; }
+  .three-proof-view-label { bottom: 205px; left: 14px; }
+}
