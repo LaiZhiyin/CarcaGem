@@ -61,7 +61,7 @@ memory/
 # Generated metadata and local user data
 *.tsbuildinfo
 .Rhistory
-data/
+/data/
 .env.production
 
 # Historical exports and design intermediates

@@ -76,6 +76,8 @@
     "test_network_start.ts": "ae338c15fb2c847face5904321732138fe52e710e359a3aa3648f5cfc9c012b9",
     "test_online_bonus_sync.ts": "284411bede718b642c881dead189e692621597eb4300f1e8490dd1492b4084df",
     "test_remaining_tiles.ts": "ac950707695a64c11efd6effb27feebadd9f7b3a9b8e713b04daa58135eaf091",
-    "test_review_regressions.ts": "6443dcfb58e470bc5240614efee03a86c533a09ba81b60821ad394ee580f118c"
+    "test_review_regressions.ts": "6443dcfb58e470bc5240614efee03a86c533a09ba81b60821ad394ee580f118c",
+    ".gitignore": "2d5bdbb52fba1c9c20ead6dfe18d76d19f607229b2dd9c88580229475f98973a",
+    "src/data/tiles.ts": "0ff1e59438a0b6da42f0f21acf7b4c551c1e5e441f0495a2310c1913e188dc75"
   }
 }

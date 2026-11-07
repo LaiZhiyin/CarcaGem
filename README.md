@@ -1,7 +1,10 @@
 # CarcaGem
 
 <p align="center">
-  <img src="docs/media/cover.svg" width="100%" alt="CarcaGem by Jasmine Lai — a player question, a working product; ocean island tiles connect across the cover">
+  <picture>
+    <source media="(max-width: 600px)" srcset="docs/media/cover-mobile.svg">
+    <img src="docs/media/cover.svg" width="100%" alt="CarcaGem by Jasmine Lai — a player question, a working product; ocean island tiles connect across the cover">
+  </picture>
 </p>
 
 **A browser strategy game built from player feedback, with an inspectable AI opponent.**
@@ -17,9 +20,16 @@ Created and led by **Jasmine Lai**, a chemistry student using **Codex as an AI c
   <a href="docs/PLAYER_GUIDE.md">Player guide</a>
 </p>
 
-| External playtesters | Games with external players | Product iterations | Automated tests |
-| --- | --- | --- | --- |
-| **20+** | **100+** | **30+** | **65 passing** |
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>20+</strong><br>External playtesters</td>
+    <td width="50%" align="center"><strong>100+</strong><br>Games with external players</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>30+</strong><br>Product iterations</td>
+    <td align="center"><strong>65 passing</strong><br>Automated tests</td>
+  </tr>
+</table>
 
 Playtesting and iteration counts are owner-reported. The automated results are reproducible below.
 

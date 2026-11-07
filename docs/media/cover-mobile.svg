@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">CarcaGem by Jasmine Lai</title>
+  <desc id="desc">A player question. A working product. Two connected island tiles on an ocean-blue background.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#70AAA8" opacity=".18"/></pattern>
+    <pattern id="waves" width="30" height="20" patternUnits="userSpaceOnUse"><path d="M-5 12Q2 4 10 12T25 12T40 12" stroke="#B1E0D3" stroke-opacity=".28" stroke-width="1.5"/></pattern>
+  </defs>
+  <rect width="720" height="360" rx="12" fill="#0A333E"/>
+  <rect width="720" height="360" rx="12" fill="url(#grid)"/>
+  <text x="32" y="36" fill="#B1DAD0" font-family="monospace" font-size="16" letter-spacing="1.5">JASMINE LAI / PRODUCT + ENGINEERING</text>
+  <path d="M32 54H688" stroke="#83B6B3" stroke-opacity=".38"/>
+  <text x="28" y="148" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="80" letter-spacing="-3">CarcaGem</text>
+  <path d="M34 179H82" stroke="#F09370" stroke-width="4"/>
+  <text x="32" y="225" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="32">A player question.</text>
+  <text x="32" y="266" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="32">A working product.</text>
+  <path d="M32 307H688" stroke="#83B6B3" stroke-opacity=".38"/>
+  <text x="32" y="337" fill="#B1DAD0" font-family="monospace" font-size="16" letter-spacing="1">DISCOVER / DESIGN / BUILD / VALIDATE</text>
+  <g transform="translate(515 69)">
+    <rect x="4" y="5" width="110" height="110" rx="6" fill="#041E27"/>
+    <rect width="110" height="110" rx="6" fill="#258FA1" stroke="#84D2CD" stroke-width="2"/>
+    <rect x="1" y="1" width="108" height="108" rx="5" fill="url(#waves)"/>
+    <path d="M0 48C28 18 33 49 58 37S87 21 110 37V110H0Z" fill="#EDCB8A"/>
+    <path d="M0 48C28 18 33 49 58 37S87 21 110 37" stroke="#FFF0CA" stroke-width="5"/>
+    <path d="M55 61V110" stroke="#885C42" stroke-width="12"/><path d="M55 61V110" stroke="#E5B77F" stroke-width="6" stroke-dasharray="3 3"/>
+    <circle cx="55" cy="61" r="12" fill="#FFF3DC"/><circle cx="55" cy="61" r="7" fill="#E68260"/>
+  </g>
+  <g transform="translate(515 187)">
+    <rect x="4" y="5" width="110" height="110" rx="6" fill="#041E27"/>
+    <rect width="110" height="110" rx="6" fill="#258FA1" stroke="#84D2CD" stroke-width="2"/>
+    <rect x="1" y="1" width="108" height="108" rx="5" fill="url(#waves)"/>
+    <path d="M0 0H110V44C81 61 69 37 45 58S16 64 0 43Z" fill="#EDCB8A"/>
+    <path d="M0 43C16 64 21 79 45 58S81 61 110 44" stroke="#FFF0CA" stroke-width="5"/>
+    <path d="M55 0V24H68" stroke="#885C42" stroke-width="12"/><path d="M55 0V24H68" stroke="#E5B77F" stroke-width="6" stroke-dasharray="3 3"/>
+    <circle cx="68" cy="24" r="12" fill="#FFF3DC"/><circle cx="68" cy="24" r="7" fill="#71AFA4"/>
+  </g>
+</svg>
