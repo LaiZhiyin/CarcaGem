@@ -1,0 +1,81 @@
+{
+  "product": "CarcaGem",
+  "release": "1.0.4",
+  "environment": {
+    "node": "v24.13.0",
+    "npm": "11.6.2",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "command": "npm run verify",
+  "results": {
+    "serverBuild": "passed",
+    "clientTypecheck": "passed",
+    "clientBuild": "passed",
+    "tests": {
+      "files": 11,
+      "total": 65,
+      "passed": 65,
+      "failed": 0
+    },
+    "fixedDecisionExample": {
+      "status": "passed",
+      "tileId": 20,
+      "evaluatedCandidates": 48,
+      "pointsAwarded": 2,
+      "explorerReturned": true
+    },
+    "publicAssetAudit": {
+      "status": "passed",
+      "files": 90,
+      "missing": 0,
+      "unused": 0
+    },
+    "exampleEslint": "passed"
+  },
+  "knownDebt": {
+    "repositoryEslint": {
+      "errors": 41,
+      "warnings": 1,
+      "ciGate": false
+    },
+    "clientBundleWarning": {
+      "chunk": "ThreeDPrototype",
+      "minifiedKB": 545.94
+    },
+    "roomsSurviveServerRestart": false
+  },
+  "ownerReported": {
+    "externalPlayers": "20+",
+    "gamesWithExternalPlayers": "100+",
+    "productIterations": "30+",
+    "independentlyAudited": false
+  },
+  "limits": [
+    "The curated example is not a playing-strength benchmark.",
+    "No controlled human win rate, retention, load limit or coverage percentage is claimed.",
+    "Build warnings and existing lint debt are disclosed, not passing checks."
+  ],
+  "sha256": {
+    "package.json": "fe156f767a66ed8a2409af2ca95b42e124b240341b2735ee5c94e0bab1563a46",
+    "package-lock.json": "dde5f0a9759de62bbed218c0a456e9d60c4516d6f286c6e02ef65edb36e8179f",
+    "tsconfig.node.json": "ed2cd4fc04c2f89baf051cedfeda1aceca38fe98665bd1022d42b40c76a6789a",
+    "scripts/check-assets.mjs": "b87fcf70952e509e1c668df1fbbfac3a7b4ff5978003dcf4bd936bd69b70ffe2",
+    "examples/ai-turn.ts": "05385cc7da9ff298f5c6b14fa40c2614e1e69680314269b25ff405a8647151ef",
+    "examples/ai-turn.fixture.json": "21e3d1c283bd26a9bddf5961e825bdac0908ff1923997bb36b4c801439de50fa",
+    "src/engine/game.ts": "55a5a5af41fbf13ae59c270055a2341dbe10750920e04eadc00db06fe3b88b1e",
+    "src/engine/ai/strategy.ts": "23be417acf047cf64196bd231f346df7836db9ddd81026f89f021a3c406974ac",
+    "src/server.ts": "1119618b66346c9af535bdeee523a7e97606b3d30e7af5200a8e79708444092c",
+    "test_ai_input.ts": "e053c743ba4ace5a5a9a2b65836353516a353889a2a993badd35c36f0c6905bc",
+    "test_ai_pacing.ts": "8d618343260ceedb944e1a5984804ebde87f8a132bd2ea11332c6761cf77ba5e",
+    "test_ai_pool.ts": "0c4a4406b53349c6c681411e7fbf58f44464bf3c02c03fa9aa467d35a3780e58",
+    "test_ai_upgrade.ts": "9c7480397110a82cbca9e72401d6188df47717f7df44811d0d0ab22fb3ec3d5b",
+    "test_analytics.ts": "855a3bc19a08aba998ebde08c0e954c5d7ffb21ce919caebef2f94f49b39e3a4",
+    "test_analytics_api.ts": "d9330d2a5373e05905390c2196c9029c09ca6631bae27f4e74459bb40d520ba9",
+    "test_analytics_client.ts": "bec724e2d999ac747ed130e61cd5f52b50fb81801606c22aa7b8ec45305f46f4",
+    "test_network_start.ts": "ae338c15fb2c847face5904321732138fe52e710e359a3aa3648f5cfc9c012b9",
+    "test_online_bonus_sync.ts": "284411bede718b642c881dead189e692621597eb4300f1e8490dd1492b4084df",
+    "test_remaining_tiles.ts": "ac950707695a64c11efd6effb27feebadd9f7b3a9b8e713b04daa58135eaf091",
+    "test_review_regressions.ts": "6443dcfb58e470bc5240614efee03a86c533a09ba81b60821ad394ee580f118c"
+  }
+}

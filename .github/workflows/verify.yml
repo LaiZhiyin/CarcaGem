@@ -1,0 +1,38 @@
+name: Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verification-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          lfs: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.13.0'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Lint the executable example
+        run: npx eslint examples/ai-turn.ts
+      - name: Build and verify behavior, example and assets
+        run: npm run verify
+      - name: Report existing repository lint debt
+        continue-on-error: true
+        run: npm run lint

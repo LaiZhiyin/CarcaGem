@@ -3,18 +3,23 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const walk = directory => readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
+const walk = directory => readdirSync(directory, { withFileTypes: true }).filter(entry => entry.name !== '.DS_Store').flatMap(entry => {
   const file = path.join(directory, entry.name);
   return entry.isDirectory() ? walk(file) : [file];
 });
 const used = new Set();
 const publicFiles = walk(path.join(root, 'public'));
-const sources = [...walk(path.join(root, 'src')), path.join(root, 'index.html'), ...publicFiles];
+const sources = [...walk(path.join(root, 'src')), path.join(root, 'index.html'), ...publicFiles,
+  path.join(root, 'README.md'), ...walk(path.join(root, 'docs'))];
 for (const file of sources) {
-  if (!/\.(?:tsx?|jsx?|css|html)$/.test(file)) continue;
+  if (!/\.(?:tsx?|jsx?|css|html|md)$/.test(file)) continue;
   const text = readFileSync(file, 'utf8');
   for (const match of text.matchAll(/["'`(](\/[^"'`\s<>)]*?\.(?:png|jpe?g|svg|ico|html|pdf|css|js))(?:\?[^"'`\s<>)]*)?["'`)]/g)) {
     if (!match[1].includes('${')) used.add(match[1]);
+  }
+  // README recordings and screenshots reference this repository's published public tree.
+  for (const match of text.matchAll(/https:\/\/(?:raw\.githubusercontent\.com\/laizhiyin\/carcagem\/main|media\.githubusercontent\.com\/media\/laizhiyin\/carcagem\/main)\/public(\/[^\s"'`<>?)]+)/g)) {
+    used.add(match[1]);
   }
 }
 

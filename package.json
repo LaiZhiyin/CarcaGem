@@ -12,6 +12,8 @@
     "lint": "eslint .",
     "test": "vitest run test_*.ts",
     "preview": "vite preview",
+    "demo": "node --import tsx examples/ai-turn.ts",
+    "verify": "npm run build:server && tsc -b && vite build && npm test -- --maxWorkers=2 && npm run demo && npm run check:assets",
     "server": "npm run build:server && ANALYTICS_DATA_PATH=${ANALYTICS_DATA_PATH:-./data} node --watch dist-server/server.js",
     "start": "NODE_ENV=production node dist-server/server.js",
     "check:assets": "node scripts/check-assets.mjs",

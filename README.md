@@ -1,153 +1,127 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/icons/carcagem_icon_256x256.png" width="112" alt="CarcaGem explorer logo">
-</p>
-
-<h1 align="center">CarcaGem</h1>
-
-<p align="center"><strong>Build an island. Master your strategy.</strong><br>
-Place landscape tiles, connect features, and send ocean-animal explorers to claim them. Every tile can change the island—and your plan.</p>
-
-<p align="center"><a href="https://carcagem.online/"><strong>Play the latest online version →</strong></a> · <a href="https://carcagem.online/player-guide.html">Open the interactive Player Guide</a></p>
+# CarcaGem
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/backgrounds/carcagem_homepage.jpg" alt="CarcaGem homepage with the explorer logo, island scenery, and Local Game and Online Game options">
+  <img src="docs/media/cover.svg" width="100%" alt="CarcaGem by Jasmine Lai — a player question, a working product; ocean island tiles connect across the cover">
 </p>
 
-## Watch AI players in action
+**A browser strategy game built from player feedback, with an inspectable AI opponent.**
+
+For casual strategy players on phones and computers, CarcaGem makes tile placement, claiming and scoring visible in one board. Play against AI, share a device, or invite friends into an online room.
+
+Created and led by **Jasmine Lai**, a chemistry student using **Codex as an AI coding tool**. I owned product direction, UI, implementation decisions, deployment and validation. [Contribution boundaries](docs/CONTRIBUTIONS.md)
+
+<p align="center">
+  <a href="https://carcagem.online/"><strong>PLAY CARCAGEM ↗</strong></a> &nbsp; · &nbsp;
+  <a href="#01--try-one-decision"><strong>TRY THE EXAMPLE</strong></a> &nbsp; · &nbsp;
+  <a href="#02--inspect-three-code-paths"><strong>INSPECT THE CODE</strong></a> &nbsp; · &nbsp;
+  <a href="docs/PLAYER_GUIDE.md">Player guide</a>
+</p>
+
+| External playtesters | Games with external players | Product iterations | Automated tests |
+| --- | --- | --- | --- |
+| **20+** | **100+** | **30+** | **65 passing** |
+
+Playtesting and iteration counts are owner-reported. The automated results are reproducible below.
+
+<p align="center">
+  <img src="docs/media/gameplay.gif" width="840" alt="Eight seconds of real CarcaGem gameplay, showing AI turns and the remaining-tile inventory">
+</p>
+
+*Actual gameplay: inspect a tile, follow an AI turn, and see the board and scores change. Full desktop and mobile recordings are below.*
+
+**A 3–5 minute tour:** play a turn → inspect three code paths → follow a player request → reproduce the checks.
+
+## 01 / Try one decision
+
+In the [browser demo](https://carcagem.online/), choose **Local Game**, keep the default human/AI seats, and start. Select a highlighted placement, rotate with **R**, then claim a feature or skip. The AI takes the next turn.
+
+For a repeatable input → decision → output, use Node.js 24 and the committed lockfile:
+
+```sh
+npm ci && npm run demo
+```
+
+| Step | What you can inspect |
+| --- | --- |
+| **Input** · [fixture](examples/ai-turn.fixture.json) | 5 board tiles; tile type 20 drawn; 74 tiles left; Nemo has 6 explorers available. |
+| **Decision** · [executable example](examples/ai-turn.ts) | Evaluate 48 legal candidates from the public snapshot; choose `(0, 2)`, rotation `0`, `road-0`. |
+| **Output** · asserted | Rules accept the move; Nemo gains **2 points**; the explorer returns; 73 tiles remain; Ray is next. |
+
+This curated example uses a fixed candidate cap. Production also performs time-bounded sampled search; the example is not a strength benchmark.
+
+## 02 / Inspect three code paths
+
+| Entry | What to inspect | Tests or sample |
+| --- | --- | --- |
+| [Game state and scoring](src/engine/game.ts) | Turn transitions, feature completion, explorer return and idempotent final scoring. | [Rules and conservation](test_ai_upgrade.ts) |
+| [AI policy](src/engine/ai/strategy.ts) | Legal candidates, inventory constraints, calibrated estimates and bounded opponent-aware search. Hidden deck order is excluded. | [Public-information/fallback tests](test_ai_upgrade.ts), [decision example](examples/ai-turn.ts) |
+| [Multiplayer server](src/server.ts) | Server-validated actions, turn ownership, stale-result rejection and worker scheduling. | [Room start](test_network_start.ts), [synchronization](test_online_bonus_sync.ts), [worker failure](test_ai_pool.ts) |
+
+The opponent combines symbolic rules, search and empirically calibrated estimates. It runs in browser/server workers without an external inference API. [Architecture](docs/architecture.md)
+
+## 03 / Follow a player request
+
+Players asked to see how many tiles remained. I treated this as a planning need: the answer had to be available **during a turn**, without hiding exhausted tile types or counting the tile already in hand.
+
+I added a 25-type inventory panel in local and online play. Counts update after a move or local undo; Escape closes it and restores focus. [Implementation](src/components/RemainingTilesPanel.tsx) · [Four regression tests](test_remaining_tiles.ts)
+
+<details>
+<summary>See the delivered inventory panel</summary>
+
+![Remaining Tiles panel with counts for all 25 types during an AI game](docs/media/remaining-tiles.png)
+
+</details>
+
+Players also requested a stronger AI. I improved its decision process and kept one production policy across local and online play. Human-strength observations remain qualitative; no controlled human win-rate study is claimed.
+
+## 04 / What building CarcaGem taught me
+
+> I began by sending Codex screenshots of things that looked wrong. Repeated fixes did not make me confident, because I could not yet explain the failure myself. The turning point was learning to name the regions and edges, write down the expected score, and make those states visible. I learned to use AI more effectively by becoming more precise about what the software had to prove.
+
+*Adapted from my development notes.* [Five engineering lessons](docs/DEVELOPMENT_NOTES.md) connect these experiences to the current data model, graph traversal, tests and player-facing feedback.
+
+## 05 / Check the evidence
+
+| Claim | Evidence and boundary |
+| --- | --- |
+| Behavior is checked. | **65 tests in 11 files** pass locally; the fixed example also asserts the action, scoring and explorer return. [Validation](docs/VALIDATION.md) |
+| Delivery is reproducible. | Client/server compilation, tests, example and asset audit run through `npm run verify` and [GitHub Actions](.github/workflows/verify.yml). |
+| The product reached external players. | Hosted deployment, desktop/mobile recordings, and my reported playtesting counts. These are not uptime or retention measurements. |
+| Engineering debt is explicit. | The report records **41 ESLint errors, 1 warning** and a 3D bundle-size warning. These are not presented as passing checks. |
+
+**Tradeoff:** stronger search consumes time and worker capacity. Production targets a 1.2-second search budget, uses two server worker slots and rejects stale results. Bounded search keeps the decision path manageable; these budgets are best-effort rather than hard real-time guarantees.
+
+### Run the full project
+
+```sh
+npm ci
+npm run verify
+HOST=127.0.0.1 npm start
+```
+
+Open `http://localhost:3001`. Verification builds the backend before socket tests. Original videos use Git LFS and are optional for the example/tests; `git lfs pull` retrieves them.
+
+[Product brief](docs/PRD.md) · [Architecture](docs/architecture.md) · [Validation](docs/VALIDATION.md) · [Development notes](docs/DEVELOPMENT_NOTES.md) · [Contributions and licenses](docs/CONTRIBUTIONS.md) · [Deployment](docs/DEPLOYMENT.md)
+
+<details>
+<summary>Full desktop and mobile gameplay recordings</summary>
 
 ### Desktop gameplay
 
-Watch AI players build the island, place explorers, and score features in this **2-minute, 12-second** gameplay video.
+2 minutes, 12 seconds.
 
 https://github.com/user-attachments/assets/0bf076af-8bc7-4395-8277-dcf74e529e89
 
-[Watch or download the original 1080p gameplay video (MP4)](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080p.mp4).
+[Original 1080p desktop recording](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080p.mp4)
 
 ### Mobile gameplay
 
-See AI players in action on a phone in this **2-minute, 2-second** mobile gameplay recording.
+2 minutes, 2 seconds.
 
 https://github.com/user-attachments/assets/2358b9d6-03a5-411f-be28-6d72b951f8c7
 
-[Watch or download the original 1080p mobile gameplay video (MP4)](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080pmo.mp4).
+[Original 1080p mobile recording](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080pmo.mp4)
 
-## The game at a glance
+</details>
 
-| 25 tile types | 80 tiles in a game | 2–3 players | 8 explorers per player |
-| --- | --- | --- | --- |
-
-The 80-tile set includes the starting tile. Play against AI, take turns with friends on one device, or meet in an online room from separate devices. Players choose a nickname and color; each player is also given a distinct ocean-animal avatar.
-
-| Nemo | Shelly | Ray | Sunny |
-| --- | --- | --- | --- |
-| ![Nemo the clownfish avatar](https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/1-nemo-red.png) | ![Shelly the turtle avatar](https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/2-shelly-blue.png) | ![Ray the manta ray avatar](https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/4-ray-green.png) | ![Sunny the ocean-animal avatar](https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/3-sunny-yellow.png) |
-
-### Choose how to play
-
-| Local Game | Online Game |
-| --- | --- |
-| Play against AI or pass the same device between 2 or 3 players. Choose a human or AI seat, then take turns in order. | Create a room, share its invite code, and play with friends on their own devices. The host starts the game. |
-
-## Read the board
-
-The next tile appears at the top left, player cards sit on the right, and the island grows in the center. Translucent spaces show legal placements. Drag to pan, choose a space, then rotate the tile or select a different position.
-
-| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk tile preview"><br>Next tile | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/2-shelly-blue.png" width="180" height="180" alt="Shelly player avatar"><br>Player cards | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="Lighthouse tile"><br>Claimable positions |
-| --- | --- | --- |
-| The counter shows tiles left in the deck out of 80. The current tile has already been drawn. | Cards show each player's avatar, nickname, score, and available explorers. The active player is highlighted. | Colored dots mark places where an explorer can claim a feature: blue sea, brown road, yellow beach, or red lighthouse. |
-
-## A turn in three moves
-
-| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="CarcaGem curved boardwalk tile"><br>1. Place a tile | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="CarcaGem lighthouse landscape tile"><br>2. Claim or skip | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="CarcaGem beach landscape tile"><br>3. Score and continue |
-| --- | --- | --- |
-| Place the drawn tile in a legal space. Every touching edge must match: sea to sea, beach to beach, and road to road. Press **R** to rotate it. | Optionally place one available explorer on an unclaimed feature marked on the new tile. Press **Space** or choose Skip to keep the explorer in reserve. | A completed road, beach, or lighthouse scores automatically, and its explorers return. Explorers claimed at sea stay there until the game ends. |
-
-You cannot claim a connected feature that already has an explorer, even if it belongs to you. You can still place tiles after using all your explorers; you just cannot claim another feature until one returns.
-
-## Four features, four scoring rules
-
-| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk road tile"><br>Road / boardwalk | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="A yellow beach tile"><br>Beach |
-| --- | --- |
-| A road is complete when every open end connects to another road. Score **1 point per distinct tile**, when completed or unfinished at game end. | A beach is complete when all outward edges connect with no gaps. Score **2 points per tile when complete** and **1 point per tile if unfinished** at game end. |
-
-| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="A lighthouse tile surrounded by island terrain"><br>Lighthouse | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_7_3d_topdown.png" width="180" height="180" alt="A blue sea tile beside a boardwalk"><br>Sea |
-| --- | --- |
-| A lighthouse is complete when all **8 surrounding spaces**, including diagonals, contain a tile. It scores **9 points**; if unfinished at game end, score surrounding tiles **+1**. | Sea scores only at game end: **3 points for each different completed beach** connected to that sea. Count each beach once. Open beaches and lighthouses do not count. |
-
-For a scored feature, the player with the most explorers earns its full value. Every player tied for the most also earns the full value; points are not split. Sea explorers remain committed until the end and do not return during play.
-
-## Treasure tiles earn bonus turns
-
-Red gems mark treasure tiles. When a **road or beach** containing a treasure tile is completed and has at least one explorer, the player or players with the most explorers in that feature earn an extra turn. Drawing or placing a gem tile alone does not trigger the bonus.
-
-| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_22_3d_topdown.png" width="180" height="180" alt="Treasure tile 22"><br>Treasure tile 22 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_23_3d_topdown.png" width="180" height="180" alt="Treasure tile 23"><br>Treasure tile 23 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_24_3d_topdown.png" width="180" height="180" alt="Treasure tile 24"><br>Treasure tile 24 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_25_3d_topdown.png" width="180" height="180" alt="Treasure tile 25"><br>Treasure tile 25 |
-| --- | --- | --- | --- |
-
-## The finish and a few smart moves
-
-The game ends when the last tile has been placed and scored, or when no remaining tile can be placed legally. Unfinished roads, beaches, and lighthouses score, along with claimed seas. Previously scored features are not scored again; add endgame points to the running totals. The highest total wins.
-
-- Keep **1–2 explorers in reserve** when you can. Short roads and easy beaches can score sooner and return explorers for another claim.
-- Check **Remaining Tiles** before investing more explorers in a difficult feature.
-- Think twice before claiming a sea: sea explorers stay there until the end, so estimate how many completed beaches it may touch.
-- Count explorers before connecting separate features. A connection can change who has the majority—and may complete a treasure feature.
-
-## Remaining tiles and controls
-
-<p><img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/5-resttiles.png" width="56" alt="Remaining Tiles button"> Select the layered-tile button to view all 25 tile types in a 5 × 5 grid. Counts show tiles still in the deck—not the tile in hand or tiles already on the board—and add up to the deck counter. The starting tile is part of the 80, so a new game begins with 78 tiles left after the first tile is drawn.</p>
-
-| Control | What it does |
-| --- | --- |
-| **R** | Rotate the current tile. |
-| **Space** | Skip explorer placement and confirm the tile. |
-| **Esc** | Close Remaining Tiles, or cancel a selected position. |
-| **Ctrl / ⌘ + Z** | Undo a turn in local games. Online games do not support undo. |
-
-On desktop, drag or scroll to pan; hold **Ctrl** while scrolling to zoom. On mobile, drag with one finger to pan, pinch with two fingers to zoom, and move two fingers together to pan. Tap tiles, positions, and markers to play. Fullscreen is available on supported desktop browsers.
-
-### Quick answers
-
-- **No legal space for the current tile?** The game checks another tile. It ends if no remaining tile can be placed legally.
-- **No explorers left?** Keep placing tiles and skip explorer placement until one returns.
-- **Can I undo online?** No. Undo is available in local games only.
-- **What happens if players tie for majority?** Each tied player receives the feature's full score and any applicable treasure turn.
-
-## Play CarcaGem
-
-<p align="center"><a href="https://carcagem.online/"><strong>Play the latest online version at carcagem.online →</strong></a></p>
-
-For the full interactive guide—with the board walkthrough, tile rotation demo, live scoring examples, treasure gallery, and expanded FAQ—visit the [Player Guide](https://carcagem.online/player-guide.html).
-
-## Run locally
-
-Requirements: Node.js 20.19+ or 22.12+, and npm.
-
-The original gameplay videos are stored with Git LFS. Install [Git LFS](https://git-lfs.com/) before cloning, or run `git lfs install` and `git lfs pull` in an existing checkout to download the full videos.
-
-```sh
-npm install
-npm run server
-```
-
-In a second terminal, start the browser client:
-
-```sh
-npm run dev
-```
-
-Open the Vite URL shown in the terminal. The local client uses `http://localhost:3001` for multiplayer and analytics APIs. To build the browser app and server, run `npm run build`; then run `npm start` to start the production server.
-
-| Command | Purpose |
-| --- | --- |
-| `npm run dev` | Start the Vite development client. |
-| `npm run server` | Build and run the local multiplayer/API server. |
-| `npm run build` | Build the browser app and server. |
-| `npm run lint` | Run ESLint. |
-| `npm test` | Run the Vitest suite. |
-| `npm run check:assets` | Check that referenced game assets exist. |
-
-See [Game Rules](docs/rules.md), [Architecture](docs/architecture.md), and [Server Deployment](docs/DEPLOYMENT.md) for project details.
-
-## Contact
-
-For project questions, email [jasminelai@foxmail.com](mailto:jasminelai@foxmail.com).
+**Contact:** [Jasmine Lai](mailto:jasminelai@foxmail.com)

@@ -1,34 +1,44 @@
-# CarcaGem Architecture
+# Architecture and decision flow
 
-CarcaGem is a TypeScript browser game with a React/Vite client and a Node.js service for multiplayer rooms and first-party analytics.
+CarcaGem has a React/TypeScript client, a shared rules engine, an AI policy and a Node.js service for Socket.IO rooms and first-party analytics.
 
-## Runtime overview
-
-```text
-Browser
-  React UI ── game engine ── local play and AI
-      │
-      └── Socket.IO ── Express server ── online rooms and AI turns
-                       ├── analytics API
-                       └── SQLite analytics store
+```mermaid
+flowchart TD
+  Input["Human action or drawn tile"] --> UI["React board and HUD"]
+  UI --> Rules["Game state and shared rules"]
+  Rules --> Snapshot["Public board, players and current tile"]
+  Snapshot --> AI["Legal candidates, inventory constraints and search"]
+  AI --> Apply["Validate and apply the chosen move"]
+  Apply --> Rules
+  Rules --> Output["Board, scores and activity"]
+  Output --> UI
+  UI <--> Socket["Socket.IO room client"]
+  Socket <--> Server["Authoritative room server"]
+  Server --> Workers["Two AI worker slots with cancellation"]
+  Workers --> AI
+  Server --> Analytics["Event ingestion and SQLite reports"]
 ```
 
-The browser can run local games without a server. Online rooms and analytics require the Node.js server. In development, Vite serves the client and proxies API and Socket.IO requests to the server. In production, the site proxy routes those requests to the private Node.js listener.
+## Input to decision to output
 
-## Main areas
+1. [Game.publicSnapshot](../src/engine/game.ts) clones board/player state, the current tile and scoring indexes. It excludes the real deck order and shuffle seed.
+2. [The policy](../src/engine/ai/strategy.ts) enumerates legal placements and claims, derives remaining counts, and checks whether frontier cells compete for the same physical tiles.
+3. Feature values combine scoring with [completion estimates](../src/engine/ai/completionModel.ts). Supported bins use bundled empirical data; other cases use a heuristic. An estimate is not a guarantee of closure.
+4. Hard search samples hypothetical orders independently of the real deck, considers opponent replies and compares completed rounds.
+5. The shared engine validates the chosen move. [The fixture](../examples/ai-turn.ts) exposes the resulting score and explorer return.
 
-- `src/App.tsx` controls the home, setup, and game screens, browser navigation prompts, and AI turns.
-- `src/components/` contains the React interface for setup, the board, player HUD, and modal dialogs.
-- `src/data/tiles.ts` defines tile shapes, terrain regions, artwork paths, and tile counts.
-- `src/engine/` implements board placement, feature connectivity, scoring, game state, and AI behavior.
-- `src/network.ts` provides the browser Socket.IO client and room operations.
-- `src/server.ts` hosts the multiplayer server and serves the production browser build.
-- `src/analytics/` collects browser events and builds reports using a worker thread.
-- `src/db/analytics.ts` and `src/analytics/store.ts` manage the SQLite analytics database.
-- `public/` contains game art, the player guide, and the analytics dashboard.
+The deterministic example caps candidates at 48 and skips sampled rollouts. Production uses a best-effort 1,200 ms budget; a loop-boundary check cannot interrupt an expensive operation already in progress.
 
-## Local development
+## Responsiveness and consistency
 
-Run `npm run server` in one terminal and `npm run dev` in another. Analytics data is stored in `./data` unless `ANALYTICS_DATA_PATH` is set. The directory must be writable and persistent in production.
+[Browser workers](../src/engine/ai.ts) move search off the UI thread and provide failure fallbacks. [Pacing](../src/engine/ai/pacing.ts) keeps an AI turn visible for at least 1,200 ms; this display delay is separate from computation.
 
-`npm run build` compiles the TypeScript client and server, then writes the browser output to `dist/` and the server output to `dist-server/`.
+[The server](../src/server.ts) checks membership, ownership and action validity. Revision checks reject stale AI results. [The pool](../src/botPool.ts) permits two active jobs, caps the queue at 64 and supports cancellation/timeouts.
+
+Rooms are process-local. Durable recovery and horizontal coordination remain open work.
+
+## Data and deployment
+
+Local play can run in the browser. Online rooms need Node.js. Browser and server events feed SQLite analytics; the existence of analytics code is not evidence for a particular player count.
+
+OpenResty/Nginx terminates HTTPS and serves static files, forwarding API/Socket.IO traffic to Node.js. Persistent analytics data belongs outside the public document root. [Deployment](DEPLOYMENT.md) contains configuration patterns without credentials.
