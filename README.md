@@ -10,8 +10,16 @@ Place landscape tiles, connect features, and send ocean-animal explorers to clai
 <p align="center"><a href="https://carcagem.online/"><strong>Play the latest online version →</strong></a> · <a href="https://carcagem.online/player-guide.html">Open the interactive Player Guide</a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/backgrounds/carcagem_bg_new_1368.jpg" alt="A CarcaGem island with beaches, blue sea, boardwalks, and a lighthouse">
+  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/backgrounds/carcagem_homepage.jpg" alt="CarcaGem homepage with the explorer logo, island scenery, and Local Game and Online Game options">
 </p>
+
+## Watch AI players in action
+
+Watch AI players build the island, place explorers, and score features in this **2-minute, 12-second** gameplay video.
+
+https://github.com/user-attachments/assets/0bf076af-8bc7-4395-8277-dcf74e529e89
+
+[Watch or download the original 1080p gameplay video (MP4)](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080p.mp4).
 
 ## The game at a glance
 
@@ -108,6 +116,8 @@ For the full interactive guide—with the board walkthrough, tile rotation demo,
 ## Run locally
 
 Requirements: Node.js 20.19+ or 22.12+, and npm.
+
+The original gameplay video is stored with Git LFS. Install [Git LFS](https://git-lfs.com/) before cloning, or run `git lfs install` and `git lfs pull` in an existing checkout to download the full video.
 
 ```sh
 npm install
