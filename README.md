@@ -42,25 +42,13 @@ The 80-tile set includes the starting tile. Play against AI, take turns with fri
 
 The next tile appears at the top left, player cards sit on the right, and the island grows in the center. Translucent spaces show legal placements. Drag to pan, choose a space, then rotate the tile or select a different position.
 
-<p>
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk tile preview">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/2-shelly-blue.png" width="180" height="180" alt="Shelly player avatar">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="Lighthouse tile">
-</p>
-
-| Next tile | Player cards | Claimable positions |
+| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk tile preview"><br>Next tile | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/workers/2-shelly-blue.png" width="180" height="180" alt="Shelly player avatar"><br>Player cards | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="Lighthouse tile"><br>Claimable positions |
 | --- | --- | --- |
 | The counter shows tiles left in the deck out of 80. The current tile has already been drawn. | Cards show each player's avatar, nickname, score, and available explorers. The active player is highlighted. | Colored dots mark places where an explorer can claim a feature: blue sea, brown road, yellow beach, or red lighthouse. |
 
 ## A turn in three moves
 
-<p>
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="CarcaGem curved boardwalk tile">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="CarcaGem lighthouse landscape tile">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="CarcaGem beach landscape tile">
-</p>
-
-| 1. Place a tile | 2. Claim or skip | 3. Score and continue |
+| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="CarcaGem curved boardwalk tile"><br>1. Place a tile | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="CarcaGem lighthouse landscape tile"><br>2. Claim or skip | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="CarcaGem beach landscape tile"><br>3. Score and continue |
 | --- | --- | --- |
 | Place the drawn tile in a legal space. Every touching edge must match: sea to sea, beach to beach, and road to road. Press **R** to rotate it. | Optionally place one available explorer on an unclaimed feature marked on the new tile. Press **Space** or choose Skip to keep the explorer in reserve. | A completed road, beach, or lighthouse scores automatically, and its explorers return. Explorers claimed at sea stay there until the game ends. |
 
@@ -68,21 +56,11 @@ You cannot claim a connected feature that already has an explorer, even if it be
 
 ## Four features, four scoring rules
 
-<p>
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk road tile">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="A yellow beach tile">
-</p>
-
-| Road / boardwalk | Beach |
+| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_19_3d_topdown.png" width="180" height="180" alt="A curved boardwalk road tile"><br>Road / boardwalk | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_16_3d_topdown.png" width="180" height="180" alt="A yellow beach tile"><br>Beach |
 | --- | --- |
 | A road is complete when every open end connects to another road. Score **1 point per distinct tile**, when completed or unfinished at game end. | A beach is complete when all outward edges connect with no gaps. Score **2 points per tile when complete** and **1 point per tile if unfinished** at game end. |
 
-<p>
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="A lighthouse tile surrounded by island terrain">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_7_3d_topdown.png" width="180" height="180" alt="A blue sea tile beside a boardwalk">
-</p>
-
-| Lighthouse | Sea |
+| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_2_3d_topdown.png" width="180" height="180" alt="A lighthouse tile surrounded by island terrain"><br>Lighthouse | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_7_3d_topdown.png" width="180" height="180" alt="A blue sea tile beside a boardwalk"><br>Sea |
 | --- | --- |
 | A lighthouse is complete when all **8 surrounding spaces**, including diagonals, contain a tile. It scores **9 points**; if unfinished at game end, score surrounding tiles **+1**. | Sea scores only at game end: **3 points for each different completed beach** connected to that sea. Count each beach once. Open beaches and lighthouses do not count. |
 
@@ -92,14 +70,8 @@ For a scored feature, the player with the most explorers earns its full value. E
 
 Red gems mark treasure tiles. When a **road or beach** containing a treasure tile is completed and has at least one explorer, the player or players with the most explorers in that feature earn an extra turn. Drawing or placing a gem tile alone does not trigger the bonus.
 
-<p>
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_22_3d_topdown.png" width="180" height="180" alt="Treasure tile 22">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_23_3d_topdown.png" width="180" height="180" alt="Treasure tile 23">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_24_3d_topdown.png" width="180" height="180" alt="Treasure tile 24">
-  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_25_3d_topdown.png" width="180" height="180" alt="Treasure tile 25">
-</p>
-
-*Treasure tiles 22, 23, 24, and 25 (in order).*
+| <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_22_3d_topdown.png" width="180" height="180" alt="Treasure tile 22"><br>Treasure tile 22 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_23_3d_topdown.png" width="180" height="180" alt="Treasure tile 23"><br>Treasure tile 23 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_24_3d_topdown.png" width="180" height="180" alt="Treasure tile 24"><br>Treasure tile 24 | <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/tiles/3d-concepts/tiles_25_3d_topdown.png" width="180" height="180" alt="Treasure tile 25"><br>Treasure tile 25 |
+| --- | --- | --- | --- |
 
 ## The finish and a few smart moves
 
