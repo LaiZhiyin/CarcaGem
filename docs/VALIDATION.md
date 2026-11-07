@@ -2,7 +2,7 @@
 
 **Reviewed:** November 7, 2026 · **Game release:** v1.0.4
 
-This report separates executable evidence, owner-reported playtesting and open questions. [Machine-readable local evidence](evidence/validation.json) records the environment and checks. Remote runs appear in the repository's Verification workflow.
+This report separates executable evidence, owner-reported playtesting and open questions. [Machine-readable evidence](evidence/validation.json) records local checks and a [successful clean Ubuntu verification](https://github.com/laizhiyin/carcagem/actions/runs/42374957596). Latest runs appear in the [Verification workflow](https://github.com/laizhiyin/carcagem/actions/workflows/verify.yml).
 
 ## Reproduce
 

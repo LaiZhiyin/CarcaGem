@@ -95,7 +95,7 @@ Players also requested a stronger AI. I improved its decision process and kept o
 | Claim | Evidence and boundary |
 | --- | --- |
 | Behavior is checked. | **65 tests in 11 files** pass locally; the fixed example also asserts the action, scoring and explorer return. [Validation](docs/VALIDATION.md) |
-| Delivery is reproducible. | Client/server compilation, tests, example and asset audit run through `npm run verify` and [GitHub Actions](.github/workflows/verify.yml). |
+| Delivery is reproducible. | Client/server compilation, tests, example and asset audit run through `npm run verify` and [GitHub Actions](https://github.com/laizhiyin/carcagem/actions/workflows/verify.yml). |
 | The product reached external players. | Hosted deployment, desktop/mobile recordings, and my reported playtesting counts. These are not uptime or retention measurements. |
 | Engineering debt is explicit. | The report records **41 ESLint errors, 1 warning** and a 3D bundle-size warning. These are not presented as passing checks. |
 

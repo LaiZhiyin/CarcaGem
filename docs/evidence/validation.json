@@ -79,5 +79,20 @@
     "test_review_regressions.ts": "6443dcfb58e470bc5240614efee03a86c533a09ba81b60821ad394ee580f118c",
     ".gitignore": "2d5bdbb52fba1c9c20ead6dfe18d76d19f607229b2dd9c88580229475f98973a",
     "src/data/tiles.ts": "0ff1e59438a0b6da42f0f21acf7b4c551c1e5e441f0495a2310c1913e188dc75"
+  },
+  "remoteVerification": {
+    "url": "https://github.com/laizhiyin/carcagem/actions/runs/42374957596",
+    "sourceCommit": "4db559afea397c5a9aca569849f68a2f9069ec38",
+    "runner": "ubuntu-latest",
+    "dependencyInstall": "npm ci",
+    "lfsDownloaded": false,
+    "buildTestsExampleAndAssetGate": "passed",
+    "testFiles": 11,
+    "testsPassed": 65,
+    "publicFilesAudited": 90,
+    "repositoryLintInformational": {
+      "errors": 41,
+      "warnings": 1
+    }
   }
 }
