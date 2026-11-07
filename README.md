@@ -15,11 +15,21 @@ Place landscape tiles, connect features, and send ocean-animal explorers to clai
 
 ## Watch AI players in action
 
+### Desktop gameplay
+
 Watch AI players build the island, place explorers, and score features in this **2-minute, 12-second** gameplay video.
 
 https://github.com/user-attachments/assets/0bf076af-8bc7-4395-8277-dcf74e529e89
 
 [Watch or download the original 1080p gameplay video (MP4)](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080p.mp4).
+
+### Mobile gameplay
+
+See AI players in action on a phone in this **2-minute, 2-second** mobile gameplay recording.
+
+https://github.com/user-attachments/assets/2358b9d6-03a5-411f-be28-6d72b951f8c7
+
+[Watch or download the original 1080p mobile gameplay video (MP4)](https://media.githubusercontent.com/media/laizhiyin/carcagem/main/public/backgrounds/carcagem1080pmo.mp4).
 
 ## The game at a glance
 
@@ -112,7 +122,7 @@ For the full interactive guide—with the board walkthrough, tile rotation demo,
 
 Requirements: Node.js 20.19+ or 22.12+, and npm.
 
-The original gameplay video is stored with Git LFS. Install [Git LFS](https://git-lfs.com/) before cloning, or run `git lfs install` and `git lfs pull` in an existing checkout to download the full video.
+The original gameplay videos are stored with Git LFS. Install [Git LFS](https://git-lfs.com/) before cloning, or run `git lfs install` and `git lfs pull` in an existing checkout to download the full videos.
 
 ```sh
 npm install
