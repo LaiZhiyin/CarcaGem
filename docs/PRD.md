@@ -6,7 +6,7 @@
 
 CarcaGem serves casual strategy players who use phones or computers and want to play with AI or friends. The initial hypothesis is that installation, learning a rulebook and finding an opponent create friction. This hypothesis is separate from the specific requests collected in playtesting.
 
-Jasmine reports 20+ external playtesters, 100+ games involving external players and at least 30 iterations. These are owner-reported records, not a published research dataset.
+Jasmine reports 20+ external playtesters, 100+ games involving external players and at least 10 iterations. These are owner-reported records, not a published research dataset.
 
 ## Scope and acceptance
 

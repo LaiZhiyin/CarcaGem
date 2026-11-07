@@ -13,7 +13,7 @@ Codex assisted with implementation, debugging and documentation. The claim is AI
 | UI | Direct visual experience, flow, mobile behavior and explanatory feedback. | [Components](../src/components/), [recordings](../README.md#desktop-gameplay) |
 | Delivery | Operate the service, test and iterate after playtesting. | [Deployment](DEPLOYMENT.md), [validation](VALIDATION.md), [CI](../.github/workflows/verify.yml) |
 
-The 20+ external players, 100+ playtest games and 30+ iterations come from Jasmine's account. No raw visitor records or private player conversations are published.
+The 20+ external players, 100+ playtest games and 10+ iterations come from Jasmine's account. No raw visitor records or private player conversations are published.
 
 ## Project implementation and dependencies
 

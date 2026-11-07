@@ -26,7 +26,7 @@ Created and led by **Jasmine Lai**, a chemistry student using **Codex as an AI c
     <td width="50%" align="center"><strong>100+</strong><br>Games with external players</td>
   </tr>
   <tr>
-    <td align="center"><strong>30+</strong><br>Product iterations</td>
+    <td align="center"><strong>10+</strong><br>Product iterations</td>
     <td align="center"><strong>65 passing</strong><br>Automated tests</td>
   </tr>
 </table>

@@ -54,7 +54,7 @@ The opponent combines rules, inventory constraints, heuristics and sampled searc
 
 Jasmine reports that the improved AI outplays most humans encountered in playtesting. No controlled, seat-balanced human trial or public match-level dataset was supplied, so this is a qualitative observation rather than a measured win rate.
 
-The 20+ external players, 100+ games and 30+ iterations are owner-reported. Analytics implementation is not independent proof of those counts.
+The 20+ external players, 100+ games and 10+ iterations are owner-reported. Analytics implementation is not independent proof of those counts.
 
 ## Current limitations and CI scope
 
