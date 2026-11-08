@@ -1,6 +1,8 @@
 # Illustrated player guide
 
-[Project case study](../README.md) · [Interactive guide](https://carcagem.online/player-guide.html)
+**Language / 语言:** [🇺🇸 English](PLAYER_GUIDE.md) · [🇨🇳 简体中文](PLAYER_GUIDE.zh-CN.md)
+
+[English project case study](../README.md) · [简体中文项目介绍](../README.zh-CN.md) · [Interactive guide](https://carcagem.online/player-guide.html)
 
 This page preserves the full visual rules and controls for players.
 

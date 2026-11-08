@@ -2,6 +2,8 @@
 
 Start with the [3–5 minute project case study](../README.md).
 
+阅读中文版： [项目介绍](../README.zh-CN.md) · [图文新手指南](PLAYER_GUIDE.zh-CN.md)
+
 | Document | Purpose |
 | --- | --- |
 | [Product brief](PRD.md) | User needs, scope, acceptance criteria and deferred work. |
@@ -10,6 +12,7 @@ Start with the [3–5 minute project case study](../README.md).
 | [Development notes](DEVELOPMENT_NOTES.md) | Jasmine's engineering lessons and current code references. |
 | [Contributions](CONTRIBUTIONS.md) | Personal/AI assistance boundaries and licensing status. |
 | [Illustrated player guide](PLAYER_GUIDE.md) | Full introduction, scoring, tile pictures and controls. |
+| [简体中文新手指南](PLAYER_GUIDE.zh-CN.md) | 中文版游戏介绍、计分规则、拼图图片和操作说明。 |
 | [Game rules](rules.md) | Rules reference. |
 | [Deployment](DEPLOYMENT.md) | Build, data storage and reverse proxy. |
 

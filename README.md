@@ -1,5 +1,7 @@
 # CarcaGem
 
+<p align="center"><strong>Language / 语言</strong>　<strong><a href="README.md">🇺🇸 English</a></strong>　·　<a href="README.zh-CN.md">🇨🇳 简体中文</a></p>
+
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="docs/media/cover-mobile.svg">
