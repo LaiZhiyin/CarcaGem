@@ -1,4 +1,4 @@
-# CarcaGem
+<h1 align="left"><img src="docs/media/carcagem-online-logo.png" width="360" alt="CarcaGem Online"></h1>
 
 <p align="center"><strong>Language / 语言</strong>　<strong><a href="README.md">🇺🇸 English</a></strong>　·　<a href="README.zh-CN.md">🇨🇳 简体中文</a></p>
 
