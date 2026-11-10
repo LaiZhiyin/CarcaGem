@@ -22,6 +22,10 @@ Created and led by **Jasmine Lai**, a chemistry student using **Codex as an AI c
   <a href="docs/PLAYER_GUIDE.md">Player guide</a>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/backgrounds/carcagem_homepage.jpg" width="100%" alt="CarcaGem board game theme image showing the ocean island tile world">
+</p>
+
 <table>
   <tr>
     <td width="50%" align="center"><strong>20+</strong><br>External playtesters</td>
