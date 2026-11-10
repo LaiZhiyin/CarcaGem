@@ -5,7 +5,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="docs/media/cover-mobile.svg">
-    <img src="docs/media/cover.svg" width="100%" alt="CarcaGem by Jasmine Lai — a player question, a working product; ocean island tiles connect across the cover">
+    <img src="docs/media/cover.svg" width="100%" alt="CarcaGem｜Board Game — a full-loop AI coding product workflow, with game specifications and connected ocean island tiles">
   </picture>
 </p>
 
