@@ -5,7 +5,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="docs/media/cover-mobile.svg">
-    <img src="docs/media/cover.svg" width="100%" alt="CarcaGem，由 Jasmine Lai 开发：一个从玩家需求出发、逐步实现的产品；封面以海洋和相连的岛屿拼图为主题">
+    <img src="docs/media/cover.svg" width="100%" alt="CarcaGem｜Board Game 桌游作品集封面：展示完整的 AI 编程产品流程、游戏信息和相连的海岛拼图">
   </picture>
 </p>
 
