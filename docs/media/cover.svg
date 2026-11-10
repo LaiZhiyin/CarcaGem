@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="480" viewBox="0 0 1440 480" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">CarcaGem — a player question, a working product</title>
-  <desc id="desc">An ocean-blue portfolio cover for Jasmine Lai's browser board game. Connected island tiles illustrate the game's placement and scoring loop.</desc>
+  <title id="title">CarcaGem｜Board Game — A full-loop AI Coding Product Workflow</title>
+  <desc id="desc">An ocean-blue board game portfolio cover presenting user research, product planning, PRD drafting, coding, deployment, testing and iteration, with player count, play time, age guidance, star rating and connected island tiles.</desc>
   <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#70AAA8" opacity=".18"/></pattern>
     <pattern id="waves" width="36" height="24" patternUnits="userSpaceOnUse"><path d="M-6 15Q3 5 12 15T30 15T48 15" stroke="#B1E0D3" stroke-opacity=".28" stroke-width="1.5"/></pattern>
@@ -10,14 +10,15 @@
   <path d="M60 58H1380" stroke="#83B6B3" stroke-opacity=".38"/>
   <text x="60" y="39" fill="#B1DAD0" font-family="monospace" font-size="15" letter-spacing="2.5">JASMINE LAI / PRODUCT + ENGINEERING</text>
   <text x="1380" y="39" text-anchor="end" fill="#B1DAD0" font-family="monospace" font-size="15" letter-spacing="2">A PLAYABLE CASE STUDY</text>
-  <text x="56" y="194" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="108" letter-spacing="-4">CarcaGem</text>
-  <path d="M62 224H120" stroke="#F09370" stroke-width="4"/>
-  <text x="60" y="275" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="35">A player question.</text>
-  <text x="60" y="320" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="35">A working product.</text>
-  <text x="60" y="367" fill="#B1DAD0" font-family="sans-serif" font-size="20">Tile strategy, human feedback, and inspectable AI.</text>
+  <text x="60" y="157" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="59" letter-spacing="-1.5">CarcaGem｜Board Game</text>
+  <path d="M62 184H120" stroke="#F09370" stroke-width="4"/>
+  <text x="60" y="226" fill="#FFF3DC" font-family="Georgia, 'Times New Roman', serif" font-size="27">A full-loop AI Coding Product Workflow.</text>
+  <text x="60" y="263" fill="#B1DAD0" font-family="sans-serif" font-size="19">Covers User Research, Product Planning, PRD Drafting,</text>
+  <text x="60" y="289" fill="#B1DAD0" font-family="sans-serif" font-size="19">Coding, Deployment, Testing and Iteration.</text>
+  <text x="60" y="338" fill="#B1DAD0" font-family="sans-serif" font-size="18">Tile strategy, human feedback, and inspectable AI.</text>
   <path d="M60 419H1380" stroke="#83B6B3" stroke-opacity=".38"/>
-  <text x="60" y="452" fill="#B1DAD0" font-family="monospace" font-size="15" letter-spacing="1.5">DISCOVER / DESIGN / BUILD / VALIDATE</text>
-  <text x="1380" y="452" text-anchor="end" fill="#B1DAD0" font-family="monospace" font-size="15" letter-spacing="1.5">25 TILE TYPES · 80 PHYSICAL TILES</text>
+  <text x="60" y="452" fill="#B1DAD0" font-family="monospace" font-size="13" letter-spacing=".7">1-3 PLAYERS · 30 MIN PLAYING TIME · AGE：8+ · STAR <tspan fill="#F09370">★★★★★</tspan></text>
+  <text x="1380" y="452" text-anchor="end" fill="#B1DAD0" font-family="monospace" font-size="15" letter-spacing="1.5">www.carcagem.online</text>
   <g transform="translate(845 91)">
     <path d="M-34 156H488M227-32V300" stroke="#B1DAD0" stroke-opacity=".15" stroke-dasharray="4 8"/>
     <g transform="translate(0 6)">
