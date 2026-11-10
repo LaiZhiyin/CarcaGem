@@ -22,6 +22,10 @@ CarcaGem 面向在手机或电脑上游玩的休闲策略玩家，将拼图放�
   <a href="docs/PLAYER_GUIDE.zh-CN.md">中文新手指南</a>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/laizhiyin/carcagem/main/public/backgrounds/carcagem_homepage.jpg" width="100%" alt="CarcaGem 桌游主题图，展示海洋与岛屿拼图世界">
+</p>
+
 <table>
   <tr>
     <td width="50%" align="center"><strong>20+</strong><br>外部试玩玩家</td>
